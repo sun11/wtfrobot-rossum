@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <org.ros.android.view.RosTextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dip" />
+   <TextView android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:id="@+id/PerformanceText" 
+    android:text="@string/performance_text" 
+    android:layout_gravity="center_horizontal">
+</TextView>
+
+   	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1">
+        <Button
+            android:id="@+id/Voice"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:minHeight="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/PerformanceText"
+            android:text="英语语音控制"
+            android:width="150dp" />
+        	  <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:minHeight="80dp"
+            android:layout_below="@+id/PerformanceText"
+            android:layout_toRightOf="@+id/Voice"
+            android:text="stop"
+            android:width="150dp" />
+                <Button
+            android:id="@+id/forward"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:minHeight="80dp"
+            android:layout_below="@+id/Voice"
+            android:layout_alignParentLeft="true"
+            android:text="forward"
+            android:width="150dp" />
+                        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:minHeight="80dp"
+            android:layout_below="@+id/stop"
+            android:layout_toRightOf="@+id/forward"
+            android:text="back"
+            android:width="150dp" />
+                                <Button
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:minHeight="80dp"
+             android:layout_below="@+id/forward"
+            android:layout_alignParentLeft="true"
+            android:text="left"
+            android:width="150dp" />
+                                        <Button
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:minHeight="80dp"
+            android:layout_below="@+id/back"
+            android:layout_toRightOf="@+id/left"
+            android:text="right"
+            android:width="150dp" />
+            <Button
+            android:id="@+id/btn_isr_demo"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:minHeight="80dp"
+            android:layout_below="@+id/left"
+            android:text="中文关键命令"
+            android:width="150dp" />
+                        <Button
+            android:id="@+id/revive"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:minHeight="80dp"
+            android:layout_below="@+id/right"
+            android:layout_toRightOf="@+id/btn_isr_demo"
+            android:text="舵机复位"
+            android:width="150dp" />
+	  	</RelativeLayout>
+	  	    <TextView
+        android:id="@+id/value1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="舵机1"
+        android:textSize="35dp" >
+    </TextView>
+	  	    <SeekBar
+        android:id="@+id/servo1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/value2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="舵机2"
+        android:textSize="35dp" >
+    </TextView>
+    <SeekBar
+        android:id="@+id/servo2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/servo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试中"
+        android:textSize="40dp" >
+    </TextView>   	
+</LinearLayout>

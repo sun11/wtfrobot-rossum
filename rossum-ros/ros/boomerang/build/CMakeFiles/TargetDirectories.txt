@@ -1,0 +1,15 @@
+/home/sun11/Lab/my-ros/ros/boomerang/build/CMakeFiles/ROSBUILD_genmsg_cpp.dir
+/home/sun11/Lab/my-ros/ros/boomerang/build/CMakeFiles/ROSBUILD_genmsg_lisp.dir
+/home/sun11/Lab/my-ros/ros/boomerang/build/CMakeFiles/ROSBUILD_gensrv_cpp.dir
+/home/sun11/Lab/my-ros/ros/boomerang/build/CMakeFiles/ROSBUILD_gensrv_lisp.dir
+/home/sun11/Lab/my-ros/ros/boomerang/build/CMakeFiles/clean-test-results.dir
+/home/sun11/Lab/my-ros/ros/boomerang/build/CMakeFiles/rosbuild_precompile.dir
+/home/sun11/Lab/my-ros/ros/boomerang/build/CMakeFiles/rosbuild_premsgsrvgen.dir
+/home/sun11/Lab/my-ros/ros/boomerang/build/CMakeFiles/rospack_genmsg.dir
+/home/sun11/Lab/my-ros/ros/boomerang/build/CMakeFiles/rospack_genmsg_libexe.dir
+/home/sun11/Lab/my-ros/ros/boomerang/build/CMakeFiles/rospack_gensrv.dir
+/home/sun11/Lab/my-ros/ros/boomerang/build/CMakeFiles/test.dir
+/home/sun11/Lab/my-ros/ros/boomerang/build/CMakeFiles/test-future.dir
+/home/sun11/Lab/my-ros/ros/boomerang/build/CMakeFiles/test-results.dir
+/home/sun11/Lab/my-ros/ros/boomerang/build/CMakeFiles/test-results-run.dir
+/home/sun11/Lab/my-ros/ros/boomerang/build/CMakeFiles/tests.dir

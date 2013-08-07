@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/38/trunk/ros/playground
+END
+PlaygroundReadMe.txt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/30/trunk/ros/playground/PlaygroundReadMe.txt
+END
+default.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/38/trunk/ros/playground/default.yaml
+END
+manifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/7/trunk/ros/playground/manifest.xml
+END
+mainpage.dox
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/2/trunk/ros/playground/mainpage.dox
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/12/trunk/ros/playground/CMakeLists.txt
+END
+default.launch
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/12/trunk/ros/playground/default.launch
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/2/trunk/ros/playground/Makefile
+END

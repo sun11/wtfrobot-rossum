@@ -1,0 +1,58 @@
+multi_dof_joints:
+  - name: world_joint
+    type: Floating
+    parent_frame_id: mainbody-21
+    child_frame_id: mainbody-21
+groups:
+  - name: rightarm
+    base_link: mainbody-21
+    tip_link: grasp-11
+default_collision_operations:
+  - object1: mainbody-21
+    object2: shoulderblade-11
+    operation: disable  # Adjacent in collision
+  - object1: shoulderblade-11
+    object2: shoulderjoint-11
+    operation: disable  # Adjacent in collision
+  - object1: shoulderjoint-11
+    object2: upperarm-11
+    operation: disable  # Adjacent in collision
+  - object1: upperarm-11
+    object2: elbow-11
+    operation: disable  # Adjacent in collision
+  - object1: elbow-11
+    object2: forearm-11
+    operation: disable  # Adjacent in collision
+  - object1: forearm-11
+    object2: wrist-11
+    operation: disable  # Adjacent in collision
+  - object1: wrist-11
+    object2: grasp-11
+    operation: disable  # Adjacent in collision
+  - object1: elbow-11
+    object2: grasp-11
+    operation: disable  # Never in collision
+  - object1: elbow-11
+    object2: shoulderjoint-11
+    operation: disable  # Never in collision
+  - object1: elbow-11
+    object2: wrist-11
+    operation: disable  # Never in collision
+  - object1: forearm-11
+    object2: grasp-11
+    operation: disable  # Never in collision
+  - object1: forearm-11
+    object2: shoulderjoint-11
+    operation: disable  # Never in collision
+  - object1: grasp-11
+    object2: upperarm-11
+    operation: disable  # Never in collision
+  - object1: mainbody-21
+    object2: shoulderjoint-11
+    operation: disable  # Never in collision
+  - object1: shoulderjoint-11
+    object2: wrist-11
+    operation: disable  # Never in collision
+  - object1: upperarm-11
+    object2: wrist-11
+    operation: disable  # Never in collision

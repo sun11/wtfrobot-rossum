@@ -1,0 +1,14 @@
+<package>
+  <description brief="boomerang">
+
+     boomerang
+
+  </description>
+  <author>Administrator</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/boomerang</url>
+
+</package>
+
+

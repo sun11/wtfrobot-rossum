@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="move_arm" type="move_arm_simple_action" name="boomerang_move_rightarm">
+        <param name="group" type="string" value="rightarm" />
+        <remap from="arm_ik" to="boomerang_rightarm_kinematics/get_constraint_aware_ik" />
+        <param name="controller_action_name" type="string" value="rightarm_controller/follow_joint_trajectory" />
+    </node>
+</launch>

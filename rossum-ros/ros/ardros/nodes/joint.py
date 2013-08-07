@@ -1,0 +1,92 @@
+#!/usr/bin/env python
+import roslib; roslib.load_manifest('ardros')
+import rospy
+import tf
+import math
+from math import sin, cos, pi
+import sys
+import time
+
+from sensor_msgs.msg import JointState
+from std_msgs.msg import Float64
+from std_msgs.msg import String
+from SerialDataGateway import SerialDataGateway
+from ardros.srv import *
+
+global oldchan1,oldchan2,oldvelocity
+oldchan1 = 1330
+oldchan2 = 2200
+oldvelocity =2000
+
+class JointController(object):
+	'''
+	Helper class for communicating with an Arduino board over serial port
+	'''
+
+	def _HandleReceivedLine(self,  line):
+		self._Counter = self._Counter + 1
+
+
+	def __init__(self, port="/dev/ttyACM1", baudrate=9600):
+		'''
+		Initializes the receiver class. 
+		port: The serial port to listen to.
+		baudrate: Baud rate for the serial communication
+		'''
+
+		self._Counter = 0
+		
+
+		rospy.init_node('joint')
+
+		port = rospy.get_param("~port", "/dev/ttyACM1")
+		baudRate = int(rospy.get_param("~baudRate", 9600))
+
+		rospy.loginfo("Starting with serial port: " + port + ", baud rate: " + str(baudRate))
+
+		# subscriptions
+		rospy.Subscriber("joint_states", JointState, self._HandleJointsCommand)
+		#self._Publisher = rospy.Publisher('serialjoint', String)
+		self._SerialDataGateway = SerialDataGateway(port, baudRate,  self._HandleReceivedLine)
+
+
+	def Start(self):
+		rospy.logdebug("Starting")
+		self._SerialDataGateway.Start()
+
+		message = '#1P%d#2P%dT%d\r\n' % (oldchan1,oldchan2,oldvelocity)
+		rospy.logdebug("Sending message: " + message)
+		self._SerialDataGateway.Write(message)
+
+
+
+	def Stop(self):
+		rospy.logdebug("Stopping")
+		self._SerialDataGateway.Stop()
+
+	def _HandleJointsCommand(self, msg):
+		global oldchan1,oldchan2,oldvelocity
+                chan1 = msg.position[msg.name.index("pan")] * 1000 + 1500
+                chan2 = msg.position[msg.name.index("tilz")] * 1000 + 1500
+                velocity=msg.velocity[msg.name.index("pan")] * 1000 + 1500
+                
+		
+                if oldchan1 == chan1 and oldchan2 == chan2 and oldvelocity == velocity :
+			return
+		message = '#1P%d#2P%dT%d\r\n' % (chan1,chan2,velocity)
+		oldchan1 = chan1
+		oldchan2 = chan2
+		oldvelocity =velocity
+		rospy.logdebug("Sending message: " + message)
+		self._SerialDataGateway.Write(message)
+
+
+if __name__ == '__main__':
+	jc = JointController()
+	try:
+		jc.Start()
+		rospy.spin()
+
+	except rospy.ROSInterruptException:
+		jc.Stop()
+

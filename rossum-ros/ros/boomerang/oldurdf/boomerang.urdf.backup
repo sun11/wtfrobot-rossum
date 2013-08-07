@@ -1,0 +1,287 @@
+<?xml version="1.0" ?>
+<robot name="boomerang">
+	<link name="body-11">
+		<visual>
+			<geometry>
+				<mesh filename="package://boomerang/urdf/body.dae"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="0.120312 0.088415 0.279644"/>
+			<material name="body-11_color">
+				<color rgba="0.792157 0.819608 0.933333 1"/>
+			</material>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://boomerang/urdf/body.dae"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="0.120312 0.088415 0.279644"/>
+		</collision>
+		<inertial>
+			<mass value="0.010517"/>
+			<inertia ixx="0.000369" ixy="-0" ixz="-0.000002" iyy="0.000378" iyz="0.000021" izz="0.000136"/>
+			<origin rpy="0 0 0" xyz="0.165649 0.033664 -0.16458"/>
+		</inertial>
+	</link>
+	<link name="r_shoulder_link-11">
+		<visual>
+			<geometry>
+				<mesh filename="package://boomerang/urdf/r_shoulder_link.dae"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="0.002375 0.281616 0.007192"/>
+			<material name="r_shoulder_link-11_color">
+				<color rgba="0.792157 0.819608 0.933333 1"/>
+			</material>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://boomerang/urdf/r_shoulder_link.dae"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="0.002375 0.281616 0.007192"/>
+		</collision>
+		<inertial>
+			<mass value="0.217938"/>
+			<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+			<origin rpy="0 0 0" xyz="0.012694 0.009065 0.008863"/>
+		</inertial>
+	</link>
+	<joint name="body-1--r_shoulder_link-11" type="revolute">
+		<parent link="body-11"/>
+		<child link="r_shoulder_link-11"/>
+		<origin rpy="-0.006366 -0.006934 0.000884" xyz="0.019208 0.007395 0.009858"/>
+		<axis xyz="-1 -4.20677e-010 0"/>
+                <limit effort="10" lower="-1.5" upper="1.5" velocity="3"/>
+	</joint>
+	<link name="r_upperarm_link-11">
+		<visual>
+			<geometry>
+				<mesh filename="package://boomerang/urdf/r_upperarm_link.dae"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="0.003666 0.259034 0.049052"/>
+			<material name="r_upperarm_link-11_color">
+				<color rgba="0.792157 0.819608 0.933333 1"/>
+			</material>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://boomerang/urdf/r_upperarm_link.dae"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="0.003666 0.259034 0.049052"/>
+		</collision>
+		<inertial>
+			<mass value="0.039543"/>
+			<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+			<origin rpy="0 0 0" xyz="0.00947 0.001136 0.042316"/>
+		</inertial>
+	</link>
+	<joint name="r_shoulder_link-1--r_upperarm_link-11" type="revolute">
+		<parent link="r_shoulder_link-11"/>
+		<child link="r_upperarm_link-11"/>
+		<origin rpy="0.33525 -1.551166 -1.902949" xyz="-0.00135 0.000834 0.093547"/>
+		<axis xyz="-4.20676e-010 1 0"/>
+                <limit effort="10" lower="-1.5" upper="1.5" velocity="3"/>
+	</joint>
+	<link name="r_elbow_link-11">
+		<visual>
+			<geometry>
+				<mesh filename="package://boomerang/urdf/r_elbow_link.dae"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="-0.000851 0.206753 -0.025799"/>
+			<material name="r_elbow_link-11_color">
+				<color rgba="0.792157 0.819608 0.933333 1"/>
+			</material>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://boomerang/urdf/r_elbow_link.dae"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="-0.000851 0.206753 -0.025799"/>
+		</collision>
+		<inertial>
+			<mass value="0.028369"/>
+			<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+			<origin rpy="0 0 0" xyz="-0.002392 0.011082 -0.018716"/>
+		</inertial>
+	</link>
+	<joint name="r_upperarm_link-1--r_elbow_link-11" type="revolute">
+		<parent link="r_upperarm_link-11"/>
+		<child link="r_elbow_link-11"/>
+		<origin rpy="2.629097 1.557672 -2.067519" xyz="-0.001429 0.04125 -0.020945"/>
+		<axis xyz="0 0 -1"/>
+                <limit effort="10" lower="-1.5" upper="1.5" velocity="3"/>
+	</joint>
+	<link name="r_forearmA_link-11">
+		<visual>
+			<geometry>
+				<mesh filename="package://boomerang/urdf/r_forearmA_link.dae"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="0.005947 0.167312 -0.053871"/>
+			<material name="r_forearmA_link-11_color">
+				<color rgba="0.792157 0.819608 0.933333 1"/>
+			</material>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://boomerang/urdf/r_forearmA_link.dae"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="0.005947 0.167312 -0.053871"/>
+		</collision>
+		<inertial>
+			<mass value="0.031306"/>
+			<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+			<origin rpy="0 0 0" xyz="-0.001548 -0.005721 -0.033674"/>
+		</inertial>
+	</link>
+	<joint name="r_elbow_link-1--r_forearmA_link-11" type="revolute">
+		<parent link="r_elbow_link-11"/>
+		<child link="r_forearmA_link-11"/>
+		<origin rpy="-3.07874 -1.564145 -1.63272" xyz="-0.001924 -0.024562 -0.093635"/>
+		<axis xyz="0 0 -1"/>
+                <limit effort="10" lower="-1.5" upper="1.5" velocity="3"/>
+	</joint>
+	<link name="r_forearmB_link-11">
+		<visual>
+			<geometry>
+				<mesh filename="package://boomerang/urdf/r_forearmB_link.dae"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="-0.003177 0.109915 -0.024912"/>
+			<material name="r_forearmB_link-11_color">
+				<color rgba="0.792157 0.819608 0.933333 1"/>
+			</material>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://boomerang/urdf/r_forearmB_link.dae"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="-0.003177 0.109915 -0.024912"/>
+		</collision>
+		<inertial>
+			<mass value="0.028369"/>
+			<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+			<origin rpy="0 0 0" xyz="-0.002415 -0.011079 -0.019955"/>
+		</inertial>
+	</link>
+	<joint name="r_forearmA_link-1--r_forearmB_link-11" type="revolute">
+		<parent link="r_forearmA_link-11"/>
+		<child link="r_forearmB_link-11"/>
+		<origin rpy="-1.575777 0.010279 -0.005354" xyz="-0.001355 -0.040964 -0.024622"/>
+		<axis xyz="0 0 -1"/>
+                <limit effort="10" lower="-1.5" upper="1.5" velocity="3"/>
+	</joint>
+	<link name="r_forearmC_link-11">
+		<visual>
+			<geometry>
+				<mesh filename="package://boomerang/urdf/r_forearmC_link.dae"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="0.002751 0.067172 -0.0217"/>
+			<material name="r_forearmC_link-11_color">
+				<color rgba="0.792157 0.819608 0.933333 1"/>
+			</material>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://boomerang/urdf/r_forearmC_link.dae"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="0.002751 0.067172 -0.0217"/>
+		</collision>
+		<inertial>
+			<mass value="0.032738"/>
+			<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+			<origin rpy="0 0 0" xyz="-0.003979 -0.018606 -0.020714"/>
+		</inertial>
+	</link>
+	<joint name="r_forearmB_link-1--r_forearmC_link-11" type="revolute">
+		<parent link="r_forearmB_link-11"/>
+		<child link="r_forearmC_link-11"/>
+		<origin rpy="2.795149 -1.559922 -2.799197" xyz="-0.026042 -0.069256 -0.025125"/>
+		<axis xyz="0 0 -1"/>
+                <limit effort="10" lower="-1.5" upper="1.5" velocity="3"/>
+	</joint>
+	<link name="r_wrist_link-11">
+		<visual>
+			<geometry>
+				<mesh filename="package://boomerang/urdf/r_wrist_link.dae"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="0.093301 0.020438 -0.315254"/>
+			<material name="r_wrist_link-11_color">
+				<color rgba="0.792157 0.819608 0.933333 1"/>
+			</material>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://boomerang/urdf/r_wrist_link.dae"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="0.093301 0.020438 -0.315254"/>
+		</collision>
+		<inertial>
+			<mass value="0.014294"/>
+			<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+			<origin rpy="0 0 0" xyz="0.095817 -0.039323 -0.314991"/>
+		</inertial>
+	</link>
+	<joint name="r_forearmC_link-1--r_wrist_link-11" type="revolute">
+		<parent link="r_forearmC_link-11"/>
+		<child link="r_wrist_link-11"/>
+		<origin rpy="3.133116 -0.002752 1.567534" xyz="0.067155 -0.034119 -0.331351"/>
+		<axis xyz="0 0 -1"/>
+                <limit effort="10" lower="-1.5" upper="1.5" velocity="3"/>
+	</joint>
+	<link name="r_graspA_link-11">
+		<visual>
+			<geometry>
+				<mesh filename="package://boomerang/urdf/r_graspA_link.dae"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="0.016385 0.156885 -0.02731"/>
+			<material name="r_graspA_link-11_color">
+				<color rgba="0.792157 0.819608 0.933333 1"/>
+			</material>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://boomerang/urdf/r_graspA_link.dae"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="0.016385 0.156885 -0.02731"/>
+		</collision>
+		<inertial>
+			<mass value="0.152031"/>
+			<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+			<origin rpy="0 0 0" xyz="0.014408 0.022398 -0.025179"/>
+		</inertial>
+	</link>
+	<joint name="r_wrist_link-1--r_graspA_link-11" type="revolute">
+		<parent link="r_wrist_link-11"/>
+		<child link="r_graspA_link-11"/>
+		<origin rpy="3.139397 0.001291 0.00257" xyz="0.122769 -0.052659 -0.331073"/>
+		<axis xyz="0 0 1"/>
+                <limit effort="10" lower="-1.5" upper="1.5" velocity="3"/>
+	</joint>
+	<link name="r_graspB_link-11">
+		<visual>
+			<geometry>
+				<mesh filename="package://boomerang/urdf/r_graspB_link.dae"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="-0.032685 0.09011 -0.022488"/>
+			<material name="r_graspB_link-11_color">
+				<color rgba="0.792157 0.819608 0.933333 1"/>
+			</material>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://boomerang/urdf/r_graspB_link.dae"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="-0.032685 0.09011 -0.022488"/>
+		</collision>
+		<inertial>
+			<mass value="0.093905"/>
+			<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+			<origin rpy="0 0 0" xyz="-0.040367 -0.002914 -0.022807"/>
+		</inertial>
+	</link>
+	<joint name="r_graspA_link-1--r_graspB_link-11" type="revolute">
+		<parent link="r_graspA_link-11"/>
+		<child link="r_graspB_link-11"/>
+		<origin rpy="-0.005811 -0.008872 -1.740934" xyz="0.028438 0.019064 -0.000152"/>
+		<axis xyz="0 0 -1"/>
+                <limit effort="10" lower="-1.5" upper="1.5" velocity="3"/>
+	</joint>
+</robot>
+

@@ -1,0 +1,23 @@
+controller_frequency: 3.0
+recovery_behavior_enable: true
+clearing_rotation_allowed: true
+TrajectoryPlannerROS:
+  max_vel_x: 0.5
+  min_vel_x: 0.3
+  max_rotational_vel: 0.6
+  min_rotational_vel: 0.45
+  min_in_place_rotational_vel: 0.45
+#  escape_vel: -0.3
+  acc_lim_th: 1.5
+  acc_lim_x: 1.5
+  acc_lim_y: 1.5
+
+  holonomic_robot: false
+
+ # goal tolerance parameters
+  yaw_goal_tolerance: 0.20
+  xy_goal_tolerance:  0.10
+  latch_xy_goal_tolerance:  true
+  oscillation_reset_dist: 0.05
+ 
+

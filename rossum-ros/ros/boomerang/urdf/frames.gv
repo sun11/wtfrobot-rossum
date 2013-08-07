@@ -1,0 +1,8 @@
+digraph G {
+"/odom" -> "/mainbody-21"[label="Broadcaster: /odom_body_broadcaster\nAverage rate: 10.195 Hz\nMost recent transform: -0.020 sec old \nBuffer length: 4.904 sec\n"];
+"/odom" -> "/base_footprint"[label="Broadcaster: /arbotix\nAverage rate: 7.835 Hz\nMost recent transform: 0.065 sec old \nBuffer length: 4.850 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1347529378.553"[ shape=plaintext ] ;
+ }->"/odom";
+}

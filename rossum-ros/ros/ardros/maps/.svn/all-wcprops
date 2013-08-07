@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/102/trunk/ros/ardros/maps
+END
+LivingRoom.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/99/trunk/ros/ardros/maps/LivingRoom.yaml
+END
+LivingRoom.pgm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/99/trunk/ros/ardros/maps/LivingRoom.pgm
+END
+recordedGoals.txt
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/102/trunk/ros/ardros/maps/recordedGoals.txt
+END
+simpleGoals.txt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/102/trunk/ros/ardros/maps/simpleGoals.txt
+END
+map.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/72/trunk/ros/ardros/maps/map.yaml
+END
+map.pgm
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/72/trunk/ros/ardros/maps/map.pgm
+END

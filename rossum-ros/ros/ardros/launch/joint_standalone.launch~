@@ -1,0 +1,5 @@
+<launch>
+  <node name="joint" pkg="ardros" type="joint.py">
+    <rosparam file="$(find ardros)/info/joint.yaml" command="load" />
+  </node>
+</launch>

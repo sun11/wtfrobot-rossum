@@ -1,0 +1,7 @@
+<launch>
+	<include file="$(find ardros)/launch/ardros_configuration.launch"/>
+        <include file="$(find ardros)/launch/joint_standalone.launch"/>
+	<include file="$(find ardros)/launch/move_base.launch"/>
+        <inlcude file="$(find ardros)/launch/joint_standalone.launch"/>
+	<node pkg="rviz" type="rviz" name="rviz" args="-d $(find ardros)/rviz/navigation.vcg"/>
+</launch>

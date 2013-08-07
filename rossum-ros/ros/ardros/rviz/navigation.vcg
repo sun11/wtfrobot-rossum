@@ -1,0 +1,155 @@
+Background\ ColorB=0
+Background\ ColorG=0
+Background\ ColorR=0
+Camera\ Config=72.926 50.2739 51.2167 0.173487
+Camera\ Type=rviz::FixedOrientationOrthoViewController
+Current\ Goal.Alpha=1
+Current\ Goal.ColorB=0
+Current\ Goal.ColorG=0.1
+Current\ Goal.ColorR=1
+Current\ Goal.Enabled=1
+Current\ Goal.Head\ Length=0.3
+Current\ Goal.Head\ Radius=0.2
+Current\ Goal.Shaft\ Length=1
+Current\ Goal.Shaft\ Radius=0.1
+Current\ Goal.Shape=0
+Current\ Goal.Topic=/goal
+Fixed\ Frame=/map
+Global\ Plan.Alpha=1
+Global\ Plan.ColorB=0.00784314
+Global\ Plan.ColorG=0.0823529
+Global\ Plan.ColorR=0.0156863
+Global\ Plan.Enabled=1
+Global\ Plan.Topic=/move_base/TrajectoryPlannerROS/global_plan
+Grid.Alpha=0.5
+Grid.Cell\ Size=1
+Grid.ColorB=0.819608
+Grid.ColorG=0.686275
+Grid.ColorR=0.141176
+Grid.Enabled=1
+Grid.Line\ Style=0
+Grid.Line\ Width=0.03
+Grid.Normal\ Cell\ Count=0
+Grid.OffsetX=0
+Grid.OffsetY=0
+Grid.OffsetZ=0
+Grid.Plane=0
+Grid.Plane\ Cell\ Count=100
+Grid.Reference\ Frame=/odom
+Inflated\ Obstacles.Alpha=1
+Inflated\ Obstacles.ColorB=0.984314
+Inflated\ Obstacles.ColorG=0.780392
+Inflated\ Obstacles.ColorR=0.752941
+Inflated\ Obstacles.Enabled=1
+Inflated\ Obstacles.Topic=/move_base/local_costmap/inflated_obstacles
+LaserScan..AxisColorAutocompute\ Value\ Bounds=1
+LaserScan..AxisColorAxis=2
+LaserScan..AxisColorMax\ Value=10
+LaserScan..AxisColorMin\ Value=-10
+LaserScan..AxisColorUse\ Fixed\ Frame=1
+LaserScan..FlatColorColorB=1
+LaserScan..FlatColorColorG=1
+LaserScan..FlatColorColorR=1
+LaserScan..IntensityAutocompute\ Intensity\ Bounds=1
+LaserScan..IntensityChannel\ Name=intensity
+LaserScan..IntensityMax\ ColorB=1
+LaserScan..IntensityMax\ ColorG=1
+LaserScan..IntensityMax\ ColorR=1
+LaserScan..IntensityMax\ Intensity=4096
+LaserScan..IntensityMin\ ColorB=0
+LaserScan..IntensityMin\ ColorG=0
+LaserScan..IntensityMin\ ColorR=0
+LaserScan..IntensityMin\ Intensity=0
+LaserScan..IntensityUse\ full\ RGB\ spectrum=0
+LaserScan.Alpha=1
+LaserScan.Billboard\ Size=0.01
+LaserScan.Color\ Transformer=Intensity
+LaserScan.Decay\ Time=0
+LaserScan.Enabled=1
+LaserScan.Position\ Transformer=XYZ
+LaserScan.Queue\ Size=10
+LaserScan.Selectable=1
+LaserScan.Style=1
+LaserScan.Topic=/scan
+Local\ Plan.Alpha=1
+Local\ Plan.ColorB=0
+Local\ Plan.ColorG=0.658824
+Local\ Plan.ColorR=1
+Local\ Plan.Enabled=1
+Local\ Plan.Topic=/move_base/TrajectoryPlannerROS/local_plan
+Obstacles.Alpha=1
+Obstacles.ColorB=0
+Obstacles.ColorG=0.0980392
+Obstacles.ColorR=1
+Obstacles.Enabled=1
+Obstacles.Topic=/move_base/local_costmap/obstacles
+Particle\ Cloud.Arrow\ Length=0.3
+Particle\ Cloud.ColorB=0
+Particle\ Cloud.ColorG=0.1
+Particle\ Cloud.ColorR=1
+Particle\ Cloud.Enabled=1
+Particle\ Cloud.Topic=/particlecloud
+Planner\ Plan.Alpha=1
+Planner\ Plan.ColorB=0.862745
+Planner\ Plan.ColorG=0
+Planner\ Plan.ColorR=1
+Planner\ Plan.Enabled=1
+Planner\ Plan.Topic=/move_base/NavfnROS/plan
+Property\ Grid\ Splitter=315,78
+Property\ Grid\ State=expanded=.Global Options,Obstacles.Enabled,Inflated Obstacles.Enabled,Robot Footprint.Enabled,Global Plan.Enabled,Planner Plan.Enabled,Local Plan.Enabled,Current Goal.Enabled,LaserScan.Enabled;splitterratio=0.5
+QMainWindow=000000ff00000000fd00000003000000000000011d00000287fc0200000002fb000000100044006900730070006c006100790073010000001d000001db000000ee00fffffffb0000000c00540065006c0065006f007001000001fe000000a60000004c00ffffff000000010000013100000287fc0200000003fb0000001e0054006f006f006c002000500072006f0070006500720074006900650073010000001d000000a60000006700fffffffb0000000a0056006900650077007301000000c90000012f000000bb00fffffffb0000001200530065006c0065006300740069006f006e01000001fe000000a60000006700ffffff00000003000005560000003efc0100000001fb0000000800540069006d0065010000000000000556000002bf00ffffff000002fc0000028700000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+Robot\ Footprint.Alpha=1
+Robot\ Footprint.ColorB=0.984314
+Robot\ Footprint.ColorG=0.0627451
+Robot\ Footprint.ColorR=0.239216
+Robot\ Footprint.Enabled=1
+Robot\ Footprint.Topic=/move_base/local_costmap/robot_footprint
+Static\ Map.Alpha=0.7
+Static\ Map.Draw\ Behind=0
+Static\ Map.Enabled=1
+Static\ Map.Topic=/map
+Target\ Frame=/map
+Tool\ 2D\ Nav\ GoalTopic=/move_base_simple/goal
+Tool\ 2D\ Pose\ EstimateTopic=initialpose
+[Display0]
+ClassName=rviz::GridDisplay
+Name=Grid
+[Display1]
+ClassName=rviz::MapDisplay
+Name=Static Map
+[Display10]
+ClassName=rviz::LaserScanDisplay
+Name=LaserScan
+[Display2]
+ClassName=rviz::PoseArrayDisplay
+Name=Particle Cloud
+[Display3]
+ClassName=rviz::GridCellsDisplay
+Name=Obstacles
+[Display4]
+ClassName=rviz::GridCellsDisplay
+Name=Inflated Obstacles
+[Display5]
+ClassName=rviz::PolygonDisplay
+Name=Robot Footprint
+[Display6]
+ClassName=rviz::PathDisplay
+Name=Global Plan
+[Display7]
+ClassName=rviz::PathDisplay
+Name=Planner Plan
+[Display8]
+ClassName=rviz::PathDisplay
+Name=Local Plan
+[Display9]
+ClassName=rviz::PoseDisplay
+Name=Current Goal
+[Panel0]
+ClassLookupName=rviz_plugin_tutorials/Teleop
+Name=Teleop
+Topic=cmd_vel
+[Window]
+Height=744
+Width=1366
+X=-2
+Y=-56

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/79/trunk/ros/ardros/info
+END
+joystick.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/54/trunk/ros/ardros/info/joystick.yaml
+END
+costmap_common_params.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/79/trunk/ros/ardros/info/costmap_common_params.yaml
+END
+gmapping.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/55/trunk/ros/ardros/info/gmapping.yaml
+END
+local_costmap_params.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/74/trunk/ros/ardros/info/local_costmap_params.yaml
+END
+base_local_planner_params.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/73/trunk/ros/ardros/info/base_local_planner_params.yaml
+END
+teleop.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/54/trunk/ros/ardros/info/teleop.yaml
+END
+global_costmap_params.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/54/trunk/ros/ardros/info/global_costmap_params.yaml
+END
+ardros.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/73/trunk/ros/ardros/info/ardros.yaml
+END

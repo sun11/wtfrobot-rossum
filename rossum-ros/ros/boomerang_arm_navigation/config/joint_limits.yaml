@@ -1,0 +1,50 @@
+joint_limits:
+  mainbody-2--shoulderblade-11:
+    has_position_limits: true
+    has_velocity_limits: true
+    max_velocity: 3
+    has_acceleration_limits: true
+    max_acceleration: 1
+    angle_wraparound: false
+  shoulderblade-1--shoulderjoint-11:
+    has_position_limits: true
+    has_velocity_limits: true
+    max_velocity: 3
+    has_acceleration_limits: true
+    max_acceleration: 1
+    angle_wraparound: false
+  shoulderjoint-1--upperarm-11:
+    has_position_limits: true
+    has_velocity_limits: true
+    max_velocity: 3
+    has_acceleration_limits: true
+    max_acceleration: 1
+    angle_wraparound: false
+  upperarm-1--elbow-11:
+    has_position_limits: true
+    has_velocity_limits: true
+    max_velocity: 3
+    has_acceleration_limits: true
+    max_acceleration: 1
+    angle_wraparound: false
+  elbow-1--forearm-11:
+    has_position_limits: true
+    has_velocity_limits: true
+    max_velocity: 3
+    has_acceleration_limits: true
+    max_acceleration: 1
+    angle_wraparound: false
+  forearm-1--wrist-11:
+    has_position_limits: true
+    has_velocity_limits: true
+    max_velocity: 3
+    has_acceleration_limits: true
+    max_acceleration: 1
+    angle_wraparound: false
+  wrist-1--grasp-11:
+    has_position_limits: true
+    has_velocity_limits: true
+    max_velocity: 3
+    has_acceleration_limits: true
+    max_acceleration: 1
+    angle_wraparound: false

@@ -1,0 +1,1206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<PhysicalModelingXMLFile>
+
+  <formatVersion>"1.0.4"</formatVersion>
+
+  <internalVersion>1</internalVersion>
+
+  <createdUsing>"SimMechanics Link Version 3.2.2"</createdUsing>
+
+  <createdFrom>"SolidWorks 19.3.0"</createdFrom>
+
+  <createdOn>"08/02/12||18:05:41"</createdOn>
+
+  <createdBy>"No formal user defined!"</createdBy>
+
+  <name>"boomerang"</name>
+
+  <SimMechanics>
+    <name>"boomerang"</name>
+    <nodeID>"boomerang"</nodeID>
+    <bodies>
+      <Body>
+        <name>"body-1"</name>
+        <nodeID>"body-1"</nodeID>
+        <status>""</status>
+        <mass>0.0105166</mass>
+        <massUnits>"kg"</massUnits>
+        <inertia>0.00036879,-4.18415e-008,-2.47543e-006,-4.18415e-008,0.000377585,2.12383e-005,-2.47543e-006,2.12383e-005,0.000136372</inertia>
+        <inertiaUnits>"kg*m^2"</inertiaUnits>
+        <volume>0.0105166</volume>
+        <volumeUnits>"m^3"</volumeUnits>
+        <surfaceArea>1.82156</surfaceArea>
+        <surfaceAreaUnits>"m^2"</surfaceAreaUnits>
+        <frames>
+          <Frame>
+            <name>"CG"</name>
+            <displayName>""</displayName>
+            <nodeID>"body-1::CG(AUTOGEN)"</nodeID>
+            <position>0.0162564,0.00132423,-0.0134793</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame>
+            <name>"CS1"</name>
+            <displayName>""</displayName>
+            <nodeID>"body-1::CS1(AUTOGEN)"</nodeID>
+            <position>-0.0290809,0.0560754,0.430745</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="2">
+            <name>"CS2"</name>
+            <displayName>""</displayName>
+            <nodeID>"body-1:-:boomerang/RootPart::body-1(AUTOGEN)"</nodeID>
+            <position>0.0162564,0.00132423,-0.0134793</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="3">
+            <name>"CS3"</name>
+            <displayName>""</displayName>
+            <nodeID>"body-1:-:r_shoulder_link-1::body-1(AUTOGEN)"</nodeID>
+            <position>-0.149393,-0.0323395,0.151101</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+        </frames>
+        <geometryFileName>"boomerang - body-1.STL"</geometryFileName>
+        <MaterialProp>
+          <color>0.792157,0.819608,0.933333</color>
+          <ambient>1</ambient>
+          <diffuse>1</diffuse>
+          <specular>0.8</specular>
+          <shininess>0.3125</shininess>
+          <transparency>0</transparency>
+          <emission>0</emission>
+        </MaterialProp>
+      </Body>
+
+      <Body>
+        <name>"r_shoulder_link-1"</name>
+        <nodeID>"r_shoulder_link-1"</nodeID>
+        <status>""</status>
+        <mass>0.217938</mass>
+        <massUnits>"kg"</massUnits>
+        <inertia>0,0,0,0,0,0,0,0,0</inertia>
+        <inertiaUnits>"kg*m^2"</inertiaUnits>
+        <volume>0</volume>
+        <volumeUnits>"m^3"</volumeUnits>
+        <surfaceArea>0</surfaceArea>
+        <surfaceAreaUnits>"m^2"</surfaceAreaUnits>
+        <frames>
+          <Frame>
+            <name>"CG"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_shoulder_link-1::CG(AUTOGEN)"</nodeID>
+            <position>-0.155912,-0.0306579,0.150162</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>0.999976,-0.000839822,-0.00693903,0.000883955,0.999979,0.00635943,0.00693354,-0.00636541,0.999956</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame>
+            <name>"CS1"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_shoulder_link-1::CS1(AUTOGEN)"</nodeID>
+            <position>-0.166001,0.241907,0.150296</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>0.999976,-0.000839822,-0.00693903,0.000883955,0.999979,0.00635943,0.00693354,-0.00636541,0.999956</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="4">
+            <name>"CS2"</name>
+            <displayName>""</displayName>
+            <nodeID>"body-1:-:r_shoulder_link-1::r_shoulder_link-1(AUTOGEN)"</nodeID>
+            <position>-0.149393,-0.0323395,0.151101</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="9">
+            <name>"CS3"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_shoulder_link-1:-:r_upperarm_link-1::r_shoulder_link-1(AUTOGEN)"</nodeID>
+            <position>-0.168675,-0.0396552,0.14133</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+        </frames>
+        <geometryFileName>"boomerang - r_shoulder_link-1.STL"</geometryFileName>
+        <MaterialProp>
+          <color>0.792157,0.819608,0.933333</color>
+          <ambient>1</ambient>
+          <diffuse>1</diffuse>
+          <specular>0.8</specular>
+          <shininess>0.3125</shininess>
+          <transparency>0</transparency>
+          <emission>0</emission>
+        </MaterialProp>
+      </Body>
+      <Body>
+        <name>"r_upperarm_link-1"</name>
+        <nodeID>"r_upperarm_link-1"</nodeID>
+        <status>""</status>
+        <mass>0.0395428</mass>
+        <massUnits>"kg"</massUnits>
+        <inertia>0,0,0,0,0,0,0,0,0</inertia>
+        <inertiaUnits>"kg*m^2"</inertiaUnits>
+        <volume>0</volume>
+        <volumeUnits>"m^3"</volumeUnits>
+        <surfaceArea>0</surfaceArea>
+        <surfaceAreaUnits>"m^2"</surfaceAreaUnits>
+        <frames>
+          <Frame>
+            <name>"CG"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_upperarm_link-1::CG(AUTOGEN)"</nodeID>
+            <position>-0.219965,-0.0291181,0.141071</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>-0.0055386,0.999979,0.00324742,-0.0116206,-0.00331161,0.999927,0.999917,0.00550045,0.0116387</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame>
+            <name>"CS1"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_upperarm_link-1::CS1(AUTOGEN)"</nodeID>
+            <position>-0.216194,-0.0357394,0.39901</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>-0.0055386,0.999979,0.00324742,-0.0116206,-0.00331161,0.999927,0.999917,0.00550045,0.0116387</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="10">
+            <name>"CS2"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_shoulder_link-1:-:r_upperarm_link-1::r_upperarm_link-1(AUTOGEN)"</nodeID>
+            <position>-0.168675,-0.0396552,0.14133</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="11">
+            <name>"CS3"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_elbow_link-1:-:r_upperarm_link-1::r_upperarm_link-1(AUTOGEN)"</nodeID>
+            <position>-0.262212,-0.0388173,0.139412</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+        </frames>
+        <geometryFileName>"boomerang - r_upperarm_link-1.STL"</geometryFileName>
+        <MaterialProp>
+          <color>0.792157,0.819608,0.933333</color>
+          <ambient>1</ambient>
+          <diffuse>1</diffuse>
+          <specular>0.8</specular>
+          <shininess>0.3125</shininess>
+          <transparency>0</transparency>
+          <emission>0</emission>
+        </MaterialProp>
+      </Body>
+
+      <Body>
+        <name>"r_elbow_link-1"</name>
+        <nodeID>"r_elbow_link-1"</nodeID>
+        <status>""</status>
+        <mass>0.0283694</mass>
+        <massUnits>"kg"</massUnits>
+        <inertia>0,0,0,0,0,0,0,0,0</inertia>
+        <inertiaUnits>"kg*m^2"</inertiaUnits>
+        <volume>0</volume>
+        <volumeUnits>"m^3"</volumeUnits>
+        <surfaceArea>0</surfaceArea>
+        <surfaceAreaUnits>"m^2"</surfaceAreaUnits>
+        <frames>
+          <Frame>
+            <name>"CG"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_elbow_link-1::CG(AUTOGEN)"</nodeID>
+            <position>-0.292389,-0.0408635,0.140507</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>-0.0041546,-0.00302964,-0.999987,0.999974,-0.00598636,-0.00413641,-0.00597375,-0.999977,0.00305444</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame>
+            <name>"CS1"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_elbow_link-1::CS1(AUTOGEN)"</nodeID>
+            <position>-0.0966869,-0.0349568,0.138135</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>-0.0041546,-0.00302964,-0.999987,0.999974,-0.00598636,-0.00413641,-0.00597375,-0.999977,0.00305444</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="12">
+            <name>"CS2"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_elbow_link-1:-:r_upperarm_link-1::r_elbow_link-1(AUTOGEN)"</nodeID>
+            <position>-0.262212,-0.0388173,0.139412</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="19">
+            <name>"CS3"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_elbow_link-1:-:r_forearmA_link-1::r_elbow_link-1(AUTOGEN)"</nodeID>
+            <position>-0.303592,-0.0595197,0.138218</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+        </frames>
+        <geometryFileName>"boomerang - r_elbow_link-1.STL"</geometryFileName>
+        <MaterialProp>
+          <color>0.792157,0.819608,0.933333</color>
+          <ambient>1</ambient>
+          <diffuse>1</diffuse>
+          <specular>0.8</specular>
+          <shininess>0.3125</shininess>
+          <transparency>0</transparency>
+          <emission>0</emission>
+        </MaterialProp>
+      </Body>
+
+      <Body>
+        <name>"r_forearmA_link-1"</name>
+        <nodeID>"r_forearmA_link-1"</nodeID>
+        <status>""</status>
+        <mass>0.0313058</mass>
+        <massUnits>"kg"</massUnits>
+        <inertia>0,0,0,0,0,0,0,0,0</inertia>
+        <inertiaUnits>"kg*m^2"</inertiaUnits>
+        <volume>0</volume>
+        <volumeUnits>"m^3"</volumeUnits>
+        <surfaceArea>0</surfaceArea>
+        <surfaceAreaUnits>"m^2"</surfaceAreaUnits>
+        <frames>
+          <Frame>
+            <name>"CG"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_forearmA_link-1::CG(AUTOGEN)"</nodeID>
+            <position>-0.304144,-0.0404615,0.0783271</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>-0.999977,0.00505749,0.00455029,0.00507383,0.999981,0.00358783,-0.00453205,0.00361084,-0.999983</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame>
+            <name>"CS1"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_forearmA_link-1::CS1(AUTOGEN)"</nodeID>
+            <position>-0.31067,0.132534,0.0991789</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>-0.999977,0.00505749,0.00455029,0.00507383,0.999981,0.00358783,-0.00453205,0.00361084,-0.999983</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="15">
+            <name>"CS2"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_forearmA_link-1:-:r_forearmB_link-1::r_forearmA_link-1(AUTOGEN)"</nodeID>
+            <position>-0.305816,-0.0346107,0.0446811</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="20">
+            <name>"CS3"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_elbow_link-1:-:r_forearmA_link-1::r_forearmA_link-1(AUTOGEN)"</nodeID>
+            <position>-0.303592,-0.0595197,0.138218</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+        </frames>
+        <geometryFileName>"boomerang - r_forearmA_link-1.STL"</geometryFileName>
+        <MaterialProp>
+          <color>0.792157,0.819608,0.933333</color>
+          <ambient>1</ambient>
+          <diffuse>1</diffuse>
+          <specular>0.8</specular>
+          <shininess>0.3125</shininess>
+          <transparency>0</transparency>
+          <emission>0</emission>
+        </MaterialProp>
+      </Body>
+      <Body>
+        <name>"r_forearmB_link-1"</name>
+        <nodeID>"r_forearmB_link-1"</nodeID>
+        <status>""</status>
+        <mass>0.0283694</mass>
+        <massUnits>"kg"</massUnits>
+        <inertia>0,0,0,0,0,0,0,0,0</inertia>
+        <inertiaUnits>"kg*m^2"</inertiaUnits>
+        <volume>0</volume>
+        <volumeUnits>"m^3"</volumeUnits>
+        <surfaceArea>0</surfaceArea>
+        <surfaceAreaUnits>"m^2"</surfaceAreaUnits>
+        <frames>
+          <Frame>
+            <name>"CG"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_forearmB_link-1::CG(AUTOGEN)"</nodeID>
+            <position>-0.304708,-0.0393118,0.0148028</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>-0.999986,-0.00522902,-0.000789308,0.000796333,-0.00134142,-0.999999,0.00522796,-0.999985,0.00134556</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame>
+            <name>"CS1"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_forearmB_link-1::CS1(AUTOGEN)"</nodeID>
+            <position>-0.303876,-0.0345133,-0.106197</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>-0.999986,-0.00522902,-0.000789308,0.000796333,-0.00134142,-0.999999,0.00522796,-0.999985,0.00134556</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="13">
+            <name>"CS2"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_forearmB_link-1:-:r_forearmC_link-1::r_forearmB_link-1(AUTOGEN)"</nodeID>
+            <position>-0.30701,-0.0592944,0.00374884</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="16">
+            <name>"CS3"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_forearmA_link-1:-:r_forearmB_link-1::r_forearmB_link-1(AUTOGEN)"</nodeID>
+            <position>-0.305816,-0.0346107,0.0446811</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+        </frames>
+        <geometryFileName>"boomerang - r_forearmB_link-1.STL"</geometryFileName>
+        <MaterialProp>
+          <color>0.792157,0.819608,0.933333</color>
+          <ambient>1</ambient>
+          <diffuse>1</diffuse>
+          <specular>0.8</specular>
+          <shininess>0.3125</shininess>
+          <transparency>0</transparency>
+          <emission>0</emission>
+        </MaterialProp>
+      </Body>
+      <Body>
+        <name>"r_forearmC_link-1"</name>
+        <nodeID>"r_forearmC_link-1"</nodeID>
+        <status>""</status>
+        <mass>0.0327382</mass>
+        <massUnits>"kg"</massUnits>
+        <inertia>0,0,0,0,0,0,0,0,0</inertia>
+        <inertiaUnits>"kg*m^2"</inertiaUnits>
+        <volume>0</volume>
+        <volumeUnits>"m^3"</volumeUnits>
+        <surfaceArea>0</surfaceArea>
+        <surfaceAreaUnits>"m^2"</surfaceAreaUnits>
+        <frames>
+          <Frame>
+            <name>"CG"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_forearmC_link-1::CG(AUTOGEN)"</nodeID>
+            <position>-0.311084,-0.0374823,-0.047038</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>0.00501847,0.999973,-0.00536683,0.00446803,-0.00538926,-0.999975,-0.999977,0.00499436,-0.00449496</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame>
+            <name>"CS1"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_forearmC_link-1::CS1(AUTOGEN)"</nodeID>
+            <position>-0.309681,-0.0312202,-0.132846</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>0.00501847,0.999973,-0.00536683,0.00446803,-0.00538926,-0.999975,-0.999977,0.00499436,-0.00449496</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="14">
+            <name>"CS2"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_forearmB_link-1:-:r_forearmC_link-1::r_forearmC_link-1(AUTOGEN)"</nodeID>
+            <position>-0.30701,-0.0592944,0.00374884</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="17">
+            <name>"CS3"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_forearmC_link-1:-:r_wrist_link-1::r_forearmC_link-1(AUTOGEN)"</nodeID>
+            <position>-0.331694,-0.0335007,-0.0657584</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+        </frames>
+        <geometryFileName>"boomerang - r_forearmC_link-1.STL"</geometryFileName>
+        <MaterialProp>
+          <color>0.792157,0.819608,0.933333</color>
+          <ambient>1</ambient>
+          <diffuse>1</diffuse>
+          <specular>0.8</specular>
+          <shininess>0.3125</shininess>
+          <transparency>0</transparency>
+          <emission>0</emission>
+        </MaterialProp>
+      </Body>
+
+
+      <Body>
+        <name>"r_wrist_link-1"</name>
+        <nodeID>"r_wrist_link-1"</nodeID>
+        <status>""</status>
+        <mass>0.0142945</mass>
+        <massUnits>"kg"</massUnits>
+        <inertia>0,0,0,0,0,0,0,0,0</inertia>
+        <inertiaUnits>"kg*m^2"</inertiaUnits>
+        <volume>0</volume>
+        <volumeUnits>"m^3"</volumeUnits>
+        <surfaceArea>0</surfaceArea>
+        <surfaceAreaUnits>"m^2"</surfaceAreaUnits>
+        <frames>
+          <Frame>
+            <name>"CG"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_wrist_link-1::CG(AUTOGEN)"</nodeID>
+            <position>-0.315461,-0.0388019,-0.0944752</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>-0.00400103,-0.00208399,-0.99999,0.00227957,0.999995,-0.00209313,0.999989,-0.00228792,-0.00399626</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame>
+            <name>"CS1"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_wrist_link-1::CS1(AUTOGEN)"</nodeID>
+            <position>-0.315577,0.0209652,-0.0920829</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>-0.00400103,-0.00208399,-0.99999,0.00227957,0.999995,-0.00209313,0.999989,-0.00228792,-0.00399626</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="7">
+            <name>"CS2"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_graspA_link-1:-:r_wrist_link-1::r_wrist_link-1(AUTOGEN)"</nodeID>
+            <position>-0.331681,-0.052157,-0.121334</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="18">
+            <name>"CS3"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_forearmC_link-1:-:r_wrist_link-1::r_wrist_link-1(AUTOGEN)"</nodeID>
+            <position>-0.331694,-0.0335007,-0.0657584</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+        </frames>
+        <geometryFileName>"boomerang - r_wrist_link-1.STL"</geometryFileName>
+        <MaterialProp>
+          <color>0.792157,0.819608,0.933333</color>
+          <ambient>1</ambient>
+          <diffuse>1</diffuse>
+          <specular>0.8</specular>
+          <shininess>0.3125</shininess>
+          <transparency>0</transparency>
+          <emission>0</emission>
+        </MaterialProp>
+      </Body>
+
+      <Body>
+        <name>"r_graspA_link-1"</name>
+        <nodeID>"r_graspA_link-1"</nodeID>
+        <status>""</status>
+        <mass>0.152031</mass>
+        <massUnits>"kg"</massUnits>
+        <inertia>0,0,0,0,0,0,0,0,0</inertia>
+        <inertiaUnits>"kg*m^2"</inertiaUnits>
+        <volume>0</volume>
+        <volumeUnits>"m^3"</volumeUnits>
+        <surfaceArea>0</surfaceArea>
+        <surfaceAreaUnits>"m^2"</surfaceAreaUnits>
+        <frames>
+          <Frame>
+            <name>"CG"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_graspA_link-1::CG(AUTOGEN)"</nodeID>
+            <position>-0.306581,-0.0745499,-0.135886</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>-0.00528654,0.000488487,-0.999986,-9.39442e-005,-1,-0.000487997,-0.999986,9.1363e-005,0.00528659</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame>
+            <name>"CS1"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_graspA_link-1::CS1(AUTOGEN)"</nodeID>
+            <position>-0.304473,-0.209036,-0.13794</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>-0.00528654,0.000488487,-0.999986,-9.39442e-005,-1,-0.000487997,-0.999986,9.1363e-005,0.00528659</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="5">
+            <name>"CS2"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_graspA_link-1:-:r_graspB_link-1::r_graspA_link-1(AUTOGEN)"</nodeID>
+            <position>-0.331681,-0.071207,-0.149782</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="8">
+            <name>"CS3"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_graspA_link-1:-:r_wrist_link-1::r_graspA_link-1(AUTOGEN)"</nodeID>
+            <position>-0.331681,-0.052157,-0.121334</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+        </frames>
+        <geometryFileName>"boomerang - r_graspA_link-1.STL"</geometryFileName>
+        <MaterialProp>
+          <color>0.792157,0.819608,0.933333</color>
+          <ambient>1</ambient>
+          <diffuse>1</diffuse>
+          <specular>0.8</specular>
+          <shininess>0.3125</shininess>
+          <transparency>0</transparency>
+          <emission>0</emission>
+        </MaterialProp>
+      </Body>
+      <Body>
+        <name>"r_graspB_link-1"</name>
+        <nodeID>"r_graspB_link-1"</nodeID>
+        <status>""</status>
+        <mass>0.0939051</mass>
+        <massUnits>"kg"</massUnits>
+        <inertia>0,0,0,0,0,0,0,0,0</inertia>
+        <inertiaUnits>"kg*m^2"</inertiaUnits>
+        <volume>0</volume>
+        <volumeUnits>"m^3"</volumeUnits>
+        <surfaceArea>0</surfaceArea>
+        <surfaceAreaUnits>"m^2"</surfaceAreaUnits>
+        <frames>
+          <Frame>
+            <name>"CG"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_graspB_link-1::CG(AUTOGEN)"</nodeID>
+            <position>-0.308558,-0.111306,-0.153722</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>-0.00788405,0.985441,0.169837,0.000617117,0.169847,-0.98547,-0.999969,-0.00766468,-0.00194721</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame>
+            <name>"CS1"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_graspB_link-1::CS1(AUTOGEN)"</nodeID>
+            <position>-0.30888,-0.0879384,-0.24409</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>-0.00788405,0.985441,0.169837,0.000617117,0.169847,-0.98547,-0.999969,-0.00766468,-0.00194721</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="6">
+            <name>"CS2"</name>
+            <displayName>""</displayName>
+            <nodeID>"r_graspA_link-1:-:r_graspB_link-1::r_graspB_link-1(AUTOGEN)"</nodeID>
+            <position>-0.331681,-0.071207,-0.149782</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+        </frames>
+        <geometryFileName>"boomerang - r_graspB_link-1.STL"</geometryFileName>
+        <MaterialProp>
+          <color>0.792157,0.819608,0.933333</color>
+          <ambient>1</ambient>
+          <diffuse>1</diffuse>
+          <specular>0.8</specular>
+          <shininess>0.3125</shininess>
+          <transparency>0</transparency>
+          <emission>0</emission>
+        </MaterialProp>
+      </Body>
+      <Body>
+        <name>"RootPart"</name>
+        <nodeID>"boomerang/RootPart"</nodeID>
+        <status>""</status>
+        <mass>0</mass>
+        <massUnits>"kg"</massUnits>
+        <inertia>0,0,0,0,0,0,0,0,0</inertia>
+        <inertiaUnits>"kg*m^2"</inertiaUnits>
+        <volume>0</volume>
+        <volumeUnits>"m^3"</volumeUnits>
+        <surfaceArea>0</surfaceArea>
+        <surfaceAreaUnits>"m^2"</surfaceAreaUnits>
+        <frames>
+          <Frame>
+            <name>"CG"</name>
+            <displayName>""</displayName>
+            <nodeID>"boomerang/RootPart::CG(AUTOGEN)"</nodeID>
+            <position>0.0077471,-0.000469266,-0.0126882</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame>
+            <name>"CS1"</name>
+            <displayName>""</displayName>
+            <nodeID>"boomerang/RootPart::CS1(AUTOGEN)"</nodeID>
+            <position>0,0,0</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="1">
+            <name>"CS2"</name>
+            <displayName>""</displayName>
+            <nodeID>"body-1:-:boomerang/RootPart::boomerang/RootPart(AUTOGEN)"</nodeID>
+            <position>0.0162564,0.00132423,-0.0134793</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="22">
+            <name>"CS3"</name>
+            <displayName>""</displayName>
+            <nodeID>"RootGround:-:boomerang/RootPart::boomerang/RootPart(AUTOGEN)"</nodeID>
+            <position>0.0077471,-0.000469266,-0.0126882</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+        </frames>
+        <geometryFileName>""</geometryFileName>
+      </Body>
+    </bodies>
+    <joints>
+      <SimpleJoint>
+        <name>"RootPart--body-1"</name>
+        <nodeID>"body-1:-:boomerang/RootPart"</nodeID>
+        <status>""</status>
+        <base>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="1"></Frame>
+            </connection>
+          </JointSide>
+        </base>
+        <follower>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="2"></Frame>
+            </connection>
+          </JointSide>
+        </follower>
+        <primitives>
+          <Primitive>
+            <name>"weld"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>0.57735,0.57735,0.57735</axis>
+          </Primitive>
+        </primitives>
+      </SimpleJoint>
+      <SimpleJoint>
+        <name>"body-1--r_shoulder_link-1"</name>
+        <nodeID>"body-1:-:r_shoulder_link-1"</nodeID>
+        <status>""</status>
+        <base>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="3"></Frame>
+            </connection>
+          </JointSide>
+        </base>
+        <follower>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="4"></Frame>
+            </connection>
+          </JointSide>
+        </follower>
+        <primitives>
+          <Primitive>
+            <name>"revolute"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>-1,-4.20677e-010,0</axis>
+          </Primitive>
+        </primitives>
+      </SimpleJoint>
+
+      <SimpleJoint>
+        <name>"r_shoulder_link-1--r_upperarm_link-1"</name>
+        <nodeID>"r_shoulder_link-1:-:r_upperarm_link-1"</nodeID>
+        <status>""</status>
+        <base>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="9"></Frame>
+            </connection>
+          </JointSide>
+        </base>
+        <follower>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="10"></Frame>
+            </connection>
+          </JointSide>
+        </follower>
+        <primitives>
+          <Primitive>
+            <name>"revolute"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>-4.20676e-010,1,0</axis>
+          </Primitive>
+        </primitives>
+      </SimpleJoint>
+      <SimpleJoint>
+        <name>"r_upperarm_link-1--r_elbow_link-1"</name>
+        <nodeID>"r_elbow_link-1:-:r_upperarm_link-1"</nodeID>
+        <status>""</status>
+        <base>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="11"></Frame>
+            </connection>
+          </JointSide>
+        </base>
+        <follower>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="12"></Frame>
+            </connection>
+          </JointSide>
+        </follower>
+        <primitives>
+          <Primitive>
+            <name>"revolute"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>-1,-4.20674e-010,0</axis>
+          </Primitive>
+        </primitives>
+      </SimpleJoint>
+
+      <SimpleJoint>
+        <name>"r_elbow_link-1--r_forearmA_link-1"</name>
+        <nodeID>"r_elbow_link-1:-:r_forearmA_link-1"</nodeID>
+        <status>""</status>
+        <base>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="19"></Frame>
+            </connection>
+          </JointSide>
+        </base>
+        <follower>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="20"></Frame>
+            </connection>
+          </JointSide>
+        </follower>
+        <primitives>
+          <Primitive>
+            <name>"revolute"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>4.20674e-010,-1,0</axis>
+          </Primitive>
+        </primitives>
+      </SimpleJoint>
+
+      <SimpleJoint>
+        <name>"r_forearmA_link-1--r_forearmB_link-1"</name>
+        <nodeID>"r_forearmA_link-1:-:r_forearmB_link-1"</nodeID>
+        <status>""</status>
+        <base>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="15"></Frame>
+            </connection>
+          </JointSide>
+        </base>
+        <follower>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="16"></Frame>
+            </connection>
+          </JointSide>
+        </follower>
+        <primitives>
+          <Primitive>
+            <name>"revolute"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>0,0,-1</axis>
+          </Primitive>
+        </primitives>
+      </SimpleJoint>
+
+      <SimpleJoint>
+        <name>"r_forearmB_link-1--r_forearmC_link-1"</name>
+        <nodeID>"r_forearmB_link-1:-:r_forearmC_link-1"</nodeID>
+        <status>""</status>
+        <base>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="13"></Frame>
+            </connection>
+          </JointSide>
+        </base>
+        <follower>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="14"></Frame>
+            </connection>
+          </JointSide>
+        </follower>
+        <primitives>
+          <Primitive>
+            <name>"revolute"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>4.20675e-010,-1,0</axis>
+          </Primitive>
+        </primitives>
+      </SimpleJoint>
+      <SimpleJoint>
+        <name>"r_forearmC_link-1--r_wrist_link-1"</name>
+        <nodeID>"r_forearmC_link-1:-:r_wrist_link-1"</nodeID>
+        <status>""</status>
+        <base>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="17"></Frame>
+            </connection>
+          </JointSide>
+        </base>
+        <follower>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="18"></Frame>
+            </connection>
+          </JointSide>
+        </follower>
+        <primitives>
+          <Primitive>
+            <name>"revolute"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>-1,-4.2067e-010,0</axis>
+          </Primitive>
+        </primitives>
+      </SimpleJoint>
+      <SimpleJoint>
+        <name>"r_wrist_link-1--r_graspA_link-1"</name>
+        <nodeID>"r_graspA_link-1:-:r_wrist_link-1"</nodeID>
+        <status>""</status>
+        <base>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="7"></Frame>
+            </connection>
+          </JointSide>
+        </base>
+        <follower>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="8"></Frame>
+            </connection>
+          </JointSide>
+        </follower>
+        <primitives>
+          <Primitive>
+            <name>"revolute"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>1,4.2067e-010,0</axis>
+          </Primitive>
+        </primitives>
+      </SimpleJoint>
+      <SimpleJoint>
+        <name>"r_graspA_link-1--r_graspB_link-1"</name>
+        <nodeID>"r_graspA_link-1:-:r_graspB_link-1"</nodeID>
+        <status>""</status>
+        <base>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="5"></Frame>
+            </connection>
+          </JointSide>
+        </base>
+        <follower>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="6"></Frame>
+            </connection>
+          </JointSide>
+        </follower>
+        <primitives>
+          <Primitive>
+            <name>"revolute"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>-1,-4.20673e-010,0</axis>
+          </Primitive>
+        </primitives>
+      </SimpleJoint>
+      <SimpleJoint>
+        <name>"RootGround--RootPart"</name>
+        <nodeID>"RootGround:-:boomerang/RootPart"</nodeID>
+        <status>""</status>
+        <base>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="21"></Frame>
+            </connection>
+          </JointSide>
+        </base>
+        <follower>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="22"></Frame>
+            </connection>
+          </JointSide>
+        </follower>
+        <primitives>
+          <Primitive>
+            <name>"weld"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>0.57735,0.57735,0.57735</axis>
+          </Primitive>
+        </primitives>
+      </SimpleJoint>
+    </joints>
+    <grounds>
+      <Ground>
+        <name>"RootGround"</name>
+        <nodeID>"RootGround"</nodeID>
+        <status>""</status>
+        <frame>
+          <Frame ref="21">
+            <name>"CS1"</name>
+            <displayName>""</displayName>
+            <nodeID>"RootGround:-:boomerang/RootPart::RootGround(AUTOGEN)"</nodeID>
+            <position>0.0077471,-0.000469266,-0.0126882</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+        </frame>
+      </Ground>
+    </grounds>
+    <subsystems></subsystems>
+    <connectionPorts></connectionPorts>
+    <id>0</id>
+  </SimMechanics>
+
+</PhysicalModelingXMLFile>

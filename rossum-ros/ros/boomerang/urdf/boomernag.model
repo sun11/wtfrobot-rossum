@@ -1,0 +1,287 @@
+<model:physical xmlns:gazebo="http://playerstage.sourceforge.net/gazebo/xmlschema/#gz" xmlns:model="http://playerstage.sourceforge.net/gazebo/xmlschema/#model" xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor" xmlns:body="http://playerstage.sourceforge.net/gazebo/xmlschema/#body" xmlns:geom="http://playerstage.sourceforge.net/gazebo/xmlschema/#geom" xmlns:joint="http://playerstage.sourceforge.net/gazebo/xmlschema/#joint" xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller" xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface" xmlns:rendering="http://playerstage.sourceforge.net/gazebo/xmlschema/#rendering" xmlns:physics="http://playerstage.sourceforge.net/gazebo/xmlschema/#physics" name="boomerang">
+    <xyz>0 0 0</xyz>
+    <rpy>0 0 0</rpy>
+    <body:empty name="base_footprint">
+        <massMatrix>true</massMatrix>
+        <mass>19.9939</mass>
+        <ixx>0.156109</ixx>
+        <ixy>0</ixy>
+        <ixz>-0.303859</ixz>
+        <iyy>0.156109</iyy>
+        <iyz>8.12352e-05</iyz>
+        <izz>0</izz>
+        <cx>0.893976</cx>
+        <cy>-0.000239</cy>
+        <cz>0.238142</cz>
+        <xyz>0 0 0</xyz>
+        <rpy>0 -0 0</rpy>
+        <geom:box name="base_footprint_geom">
+            <xyz>0 0 0.017</xyz>
+            <rpy>0 -0 0</rpy>
+            <size>0.001 0.001 0.001</size>
+            <visual>
+                <xyz>0 0 0</xyz>
+                <rpy>0 -0 0</rpy>
+                <scale>0.001 0.001 0.001</scale>
+                <mesh>unit_box</mesh>
+            </visual>
+        </geom:box>
+        <geom:trimesh name="base_footprint_geom_mainbody-21">
+            <xyz>0.894449 -0.00816 -0.035198</xyz>
+            <rpy>0 -0 0</rpy>
+            <scale>1 1 1</scale>
+            <mesh>/home/administrator/myros/boomerang/urdf/mainbody.dae</mesh>
+            <visual>
+                <xyz>0 0 0</xyz>
+                <rpy>0 -0 0</rpy>
+                <scale>1 1 1</scale>
+                <mesh>/home/administrator/myros/boomerang/urdf/mainbody.dae</mesh>
+            </visual>
+        </geom:trimesh>
+    </body:empty>
+    <body:empty name="shoulderblade-11">
+        <massMatrix>true</massMatrix>
+        <mass>0.176614</mass>
+        <ixx>0</ixx>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyy>0</iyy>
+        <iyz>0</iyz>
+        <izz>0</izz>
+        <cx>0.000347</cx>
+        <cy>-0.000728</cy>
+        <cz>0.000418</cz>
+        <xyz>0.849713 0.146171 0.399741</xyz>
+        <rpy>1.16047 0.497213 31.1907</rpy>
+        <geom:trimesh name="shoulderblade-11_geom">
+            <xyz>0.001728 -6.7e-05 -0.000827</xyz>
+            <rpy>0 -0 0</rpy>
+            <scale>1 1 1</scale>
+            <mesh>/home/administrator/myros/boomerang/urdf/shoulderblade.dae</mesh>
+            <visual>
+                <xyz>0 0 0</xyz>
+                <rpy>0 -0 0</rpy>
+                <scale>1 1 1</scale>
+                <mesh>/home/administrator/myros/boomerang/urdf/shoulderblade.dae</mesh>
+            </visual>
+        </geom:trimesh>
+    </body:empty>
+    <joint:hinge name="mainbody-2--shoulderblade-11">
+        <body1>shoulderblade-11</body1>
+        <body2>base_footprint</body2>
+        <anchor>shoulderblade-11</anchor>
+        <axis>-0.517631 0.855364 0.0202519</axis>
+        <lowStop>-85.9437</lowStop>
+        <highStop>85.9437</highStop>
+    </joint:hinge>
+    <body:empty name="shoulderjoint-11">
+        <massMatrix>true</massMatrix>
+        <mass>0.046137</mass>
+        <ixx>0</ixx>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyy>0</iyy>
+        <iyz>0</iyz>
+        <izz>0</izz>
+        <cx>-0.024929</cx>
+        <cy>0.014401</cy>
+        <cz>-0.01623</cz>
+        <xyz>0.857446 0.181892 0.418338</xyz>
+        <rpy>2.70414 1.76072 32.3743</rpy>
+        <geom:trimesh name="shoulderjoint-11_geom">
+            <xyz>-0.032502 0.014752 -0.014338</xyz>
+            <rpy>0 -0 0</rpy>
+            <scale>1 1 1</scale>
+            <mesh>/home/administrator/myros/boomerang/urdf/shoulderjoint.dae</mesh>
+            <visual>
+                <xyz>0 0 0</xyz>
+                <rpy>0 -0 0</rpy>
+                <scale>1 1 1</scale>
+                <mesh>/home/administrator/myros/boomerang/urdf/shoulderjoint.dae</mesh>
+            </visual>
+        </geom:trimesh>
+    </body:empty>
+    <joint:hinge name="shoulderblade-1--shoulderjoint-11">
+        <body1>shoulderjoint-11</body1>
+        <body2>shoulderblade-11</body2>
+        <anchor>shoulderjoint-11</anchor>
+        <axis>0.844169 0.535196 -0.0307256</axis>
+        <lowStop>-85.9437</lowStop>
+        <highStop>85.9437</highStop>
+    </joint:hinge>
+    <body:empty name="upperarm-11">
+        <massMatrix>true</massMatrix>
+        <mass>0.014856</mass>
+        <ixx>0</ixx>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyy>0</iyy>
+        <iyz>0</iyz>
+        <izz>0</izz>
+        <cx>0.004072</cx>
+        <cy>0.005053</cy>
+        <cz>-0.043501</cz>
+        <xyz>0.818496 0.192948 0.374491</xyz>
+        <rpy>-1.65263 1.49879 -58.8322</rpy>
+        <geom:trimesh name="upperarm-11_geom">
+            <xyz>-0.013188 0.006507 -0.050394</xyz>
+            <rpy>0 -0 0</rpy>
+            <scale>1 1 1</scale>
+            <mesh>/home/administrator/myros/boomerang/urdf/upperarm.dae</mesh>
+            <visual>
+                <xyz>0 0 0</xyz>
+                <rpy>0 -0 0</rpy>
+                <scale>1 1 1</scale>
+                <mesh>/home/administrator/myros/boomerang/urdf/upperarm.dae</mesh>
+            </visual>
+        </geom:trimesh>
+    </body:empty>
+    <joint:hinge name="shoulderjoint-1--upperarm-11">
+        <body1>upperarm-11</body1>
+        <body2>shoulderjoint-11</body2>
+        <anchor>upperarm-11</anchor>
+        <axis>0.0382082 -0.0074451 0.999242</axis>
+        <lowStop>-85.9437</lowStop>
+        <highStop>85.9437</highStop>
+    </joint:hinge>
+    <body:empty name="elbow-11">
+        <massMatrix>true</massMatrix>
+        <mass>0.048882</mass>
+        <ixx>0</ixx>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyy>0</iyy>
+        <iyz>0</iyz>
+        <izz>0</izz>
+        <cx>0.00157</cx>
+        <cy>0.023876</cy>
+        <cz>-0.035902</cz>
+        <xyz>0.844076 0.182067 0.29311</xyz>
+        <rpy>145.245 87.6395 176.087</rpy>
+        <geom:trimesh name="elbow-11_geom">
+            <xyz>-0.006286 0.02685 -0.0363</xyz>
+            <rpy>0 -0 0</rpy>
+            <scale>1 1 1</scale>
+            <mesh>/home/administrator/myros/boomerang/urdf/elbow.dae</mesh>
+            <visual>
+                <xyz>0 0 0</xyz>
+                <rpy>0 -0 0</rpy>
+                <scale>1 1 1</scale>
+                <mesh>/home/administrator/myros/boomerang/urdf/elbow.dae</mesh>
+            </visual>
+        </geom:trimesh>
+    </body:empty>
+    <joint:hinge name="upperarm-1--elbow-11">
+        <body1>elbow-11</body1>
+        <body2>upperarm-11</body2>
+        <anchor>elbow-11</anchor>
+        <axis>-0.51219 0.858551 0.0234796</axis>
+        <lowStop>-85.9437</lowStop>
+        <highStop>85.9437</highStop>
+    </joint:hinge>
+    <body:empty name="forearm-11">
+        <massMatrix>true</massMatrix>
+        <mass>0.014412</mass>
+        <ixx>0</ixx>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyy>0</iyy>
+        <iyz>0</iyz>
+        <izz>0</izz>
+        <cx>0.000455</cx>
+        <cy>-0.004207</cy>
+        <cz>-0.043057</cz>
+        <xyz>0.75919 0.15853 0.297284</xyz>
+        <rpy>-91.6588 1.44193 -59.4001</rpy>
+        <geom:trimesh name="forearm-11_geom">
+            <xyz>0.009782 -0.00247 -0.049233</xyz>
+            <rpy>0 -0 0</rpy>
+            <scale>1 1 1</scale>
+            <mesh>/home/administrator/myros/boomerang/urdf/forearm.dae</mesh>
+            <visual>
+                <xyz>0 0 0</xyz>
+                <rpy>0 -0 0</rpy>
+                <scale>1 1 1</scale>
+                <mesh>/home/administrator/myros/boomerang/urdf/forearm.dae</mesh>
+            </visual>
+        </geom:trimesh>
+    </body:empty>
+    <joint:hinge name="elbow-1--forearm-11">
+        <body1>forearm-11</body1>
+        <body2>elbow-11</body2>
+        <anchor>forearm-11</anchor>
+        <axis>0.860011 0.509454 -0.028939</axis>
+        <lowStop>-85.9437</lowStop>
+        <highStop>85.9437</highStop>
+    </joint:hinge>
+    <body:empty name="wrist-11">
+        <massMatrix>true</massMatrix>
+        <mass>0.043581</mass>
+        <ixx>0</ixx>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyy>0</iyy>
+        <iyz>0</iyz>
+        <izz>0</izz>
+        <cx>0.025362</cx>
+        <cy>0.013199</cy>
+        <cz>-0.018104</cz>
+        <xyz>0.690198 0.115942 0.324319</xyz>
+        <rpy>140.059 87.428 171.005</rpy>
+        <geom:trimesh name="wrist-11_geom">
+            <xyz>0.036091 0.01389 -0.016099</xyz>
+            <rpy>0 -0 0</rpy>
+            <scale>1 1 1</scale>
+            <mesh>/home/administrator/myros/boomerang/urdf/wrist.dae</mesh>
+            <visual>
+                <xyz>0 0 0</xyz>
+                <rpy>0 -0 0</rpy>
+                <scale>1 1 1</scale>
+                <mesh>/home/administrator/myros/boomerang/urdf/wrist.dae</mesh>
+            </visual>
+        </geom:trimesh>
+    </body:empty>
+    <joint:hinge name="forearm-1--wrist-11">
+        <body1>wrist-11</body1>
+        <body2>forearm-11</body2>
+        <anchor>wrist-11</anchor>
+        <axis>-0.0443228 0.00701597 -0.998993</axis>
+        <lowStop>-85.9437</lowStop>
+        <highStop>85.9437</highStop>
+    </joint:hinge>
+    <body:empty name="grasp-11">
+        <massMatrix>true</massMatrix>
+        <mass>0.03571</mass>
+        <ixx>0</ixx>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyy>0</iyy>
+        <iyz>0</iyz>
+        <izz>0</izz>
+        <cx>0.001644</cx>
+        <cy>0.022843</cy>
+        <cz>0.002207</cz>
+        <xyz>0.632876 0.115475 0.290515</xyz>
+        <rpy>178.537 1.44614 -58.3759</rpy>
+        <geom:trimesh name="grasp-11_geom">
+            <xyz>0.005019 0.016043 0.002636</xyz>
+            <rpy>0 -0 0</rpy>
+            <scale>1 1 1</scale>
+            <mesh>/home/administrator/myros/boomerang/urdf/grasp.dae</mesh>
+            <visual>
+                <xyz>0 0 0</xyz>
+                <rpy>0 -0 0</rpy>
+                <scale>1 1 1</scale>
+                <mesh>/home/administrator/myros/boomerang/urdf/grasp.dae</mesh>
+            </visual>
+        </geom:trimesh>
+    </body:empty>
+    <joint:hinge name="wrist-1--grasp-11">
+        <body1>grasp-11</body1>
+        <body2>wrist-11</body2>
+        <anchor>grasp-11</anchor>
+        <axis>-0.850891 -0.524722 0.0255187</axis>
+        <lowStop>-85.9437</lowStop>
+        <highStop>85.9437</highStop>
+    </joint:hinge>
+</model:physical>

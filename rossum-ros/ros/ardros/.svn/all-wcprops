@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/79/trunk/ros/ardros
+END
+manifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/73/trunk/ros/ardros/manifest.xml
+END
+ArdrosReadMe.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/73/trunk/ros/ardros/ArdrosReadMe.txt
+END
+mainpage.dox
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/40/trunk/ros/ardros/mainpage.dox
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/40/trunk/ros/ardros/CMakeLists.txt
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/40/trunk/ros/ardros/Makefile
+END

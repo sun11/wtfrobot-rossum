@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/79/trunk/ros/ardros/launch
+END
+teleop.launch
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/54/trunk/ros/ardros/launch/teleop.launch
+END
+slam.launch
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/70/trunk/ros/ardros/launch/slam.launch
+END
+teleopRobot.launch
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/54/trunk/ros/ardros/launch/teleopRobot.launch
+END
+navigation.launch
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/73/trunk/ros/ardros/launch/navigation.launch
+END
+move_base.launch
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/79/trunk/ros/ardros/launch/move_base.launch
+END
+ardros_configuration.launch
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/68/trunk/ros/ardros/launch/ardros_configuration.launch
+END
+ardros_standalone.launch
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/55/trunk/ros/ardros/launch/ardros_standalone.launch
+END
+kinect_laser.launch
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/68/trunk/ros/ardros/launch/kinect_laser.launch
+END
+amcl_diff.launch
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/79/trunk/ros/ardros/launch/amcl_diff.launch
+END
