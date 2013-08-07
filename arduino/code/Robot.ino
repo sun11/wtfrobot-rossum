@@ -46,12 +46,12 @@ the use of this software, even if advised of the possibility of such damage.
 
 
 
-#define c_UpdateInterval 20      // update interval in milli seconds                         ÏµÍ³Ê±¼ä¸üÐÂãÐÖµ  20ms
-//#define c_MaxMotorCV   30      // range is 0 ... 89 (half servo range)                   ×î´ó¶æ»ú×ª¶¯½Ç¶È  30¡ã
+#define c_UpdateInterval 20      // update interval in milli seconds                         ç³»ç»Ÿæ—¶é—´æ›´æ–°é˜ˆå€¼  20ms
+//#define c_MaxMotorCV   30      // range is 0 ... 89 (half servo range)                   æœ€å¤§èˆµæœºè½¬åŠ¨è§’åº¦  30Â°
 
 #define MotorWorkingTime   20
 
-// container for robot params wheel diameter [m], trackwidth [m], ticks per revolution     ²ÎÊý£ºÂÖ×ÓÖ±¾¶£¬ÂÖ¾à£¬Ã¿È¦Âö³å¼ÆÊý
+// container for robot params wheel diameter [m], trackwidth [m], ticks per revolution     å‚æ•°ï¼šè½®å­ç›´å¾„ï¼Œè½®è·ï¼Œæ¯åœˆè„‰å†²è®¡æ•°
 RobotParams _RobotParams = RobotParams();   //create robot params
 
 TimeInfo _TimeInfo = TimeInfo();
@@ -66,37 +66,37 @@ NewMotorCar RMotor(8,10,9);
 //Servo _RightServo;  // create servo object to control right motor
 //Servo _LeftServo;   // create servo object to control left motor
 
-/////////////////////###############Ê¹ÓÃÖÐ¶Ï0£¬1½øÈë±àÂëÆ÷Êý¾Ý¶ÁÈ¡Âö³åº¯Êý£¬ÓÃpin13,12,3,2¶ÁÈ¡Á½¶ÔABÂö³åÖµ
+/////////////////////###############ä½¿ç”¨ä¸­æ–­0ï¼Œ1è¿›å…¥ç¼–ç å™¨æ•°æ®è¯»å–è„‰å†²å‡½æ•°ï¼Œç”¨pin13,12,3,2è¯»å–ä¸¤å¯¹ABè„‰å†²å€¼
 
 
 // Quadrature encoders
 // Left encoder
-#define c_LeftEncoderInterrupt 0         //ÖÐ¶ÏºÅ
-#define c_LeftEncoderPinA 2              //¼ì²â½Å
+#define c_LeftEncoderInterrupt 0         //ä¸­æ–­å·
+#define c_LeftEncoderPinA 2              //æ£€æµ‹è„š
 #define c_LeftEncoderPinB 5
-//#define LeftEncoderIsReversed            //ÅÐ¶ÏÊÇ·ñ·´Ïò¹¤×÷
-volatile bool _LeftEncoderBSet;          //PinAÉÏÉýÑØ£¬½øÈëÖÐ¶Ïºó£¬¼ì²âPinBµçÆ½£¬´óÐ¡ÒªÃ´Îª0£¬ÒªÃ´Îª1
-volatile long _LeftEncoderTicks = 0;     //¼ÆÊý¹éÁã
+//#define LeftEncoderIsReversed            //åˆ¤æ–­æ˜¯å¦åå‘å·¥ä½œ
+volatile bool _LeftEncoderBSet;          //PinAä¸Šå‡æ²¿ï¼Œè¿›å…¥ä¸­æ–­åŽï¼Œæ£€æµ‹PinBç”µå¹³ï¼Œå¤§å°è¦ä¹ˆä¸º0ï¼Œè¦ä¹ˆä¸º1
+volatile long _LeftEncoderTicks = 0;     //è®¡æ•°å½’é›¶
 
 // Right encoder
 #define c_RightEncoderInterrupt 1
 #define c_RightEncoderPinA 3
 #define c_RightEncoderPinB 6
-#define RightEncoderIsReversed            //ÅÐ¶ÏÊÇ·ñ·´Ïò¹¤×÷
+#define RightEncoderIsReversed            //åˆ¤æ–­æ˜¯å¦åå‘å·¥ä½œ
 volatile bool _RightEncoderBSet;
 volatile long _RightEncoderTicks = 0;    
 
-////////////////////////////////////////////////###############»úÆ÷ÈË·½Î»ºÍËÙ¶È
+////////////////////////////////////////////////###############æœºå™¨äººæ–¹ä½å’Œé€Ÿåº¦
 
-OdometricLocalizer _OdometricLocalizer(&_RobotParams, &_TimeInfo);                   //·½Î»¼ÆËã
+OdometricLocalizer _OdometricLocalizer(&_RobotParams, &_TimeInfo);                   //æ–¹ä½è®¡ç®—
 
-SpeedController _SpeedController(&_OdometricLocalizer, &_RobotParams, &_TimeInfo);                  //ËÙ¶Èµ÷½Ú   ÐèÒª·½Î»£¬²ÎÊý£¬Ê±¼ä
-
-
-#define c_ScaledBatteryVInPin A0// analog input pin for the battery voltage divider  //PIN A0  ²É¼¯µç³ØµçÑ¹
+SpeedController _SpeedController(&_OdometricLocalizer, &_RobotParams, &_TimeInfo);                  //é€Ÿåº¦è°ƒèŠ‚   éœ€è¦æ–¹ä½ï¼Œå‚æ•°ï¼Œæ—¶é—´
 
 
-#define c_VInToVBatteryRatio 2.921/////////////////////////A6ÉÏ²âµÄµçÑ¹ÓëÕæÊµµçÔ´µçÑ¹µÄ±ÈÖµ
+#define c_ScaledBatteryVInPin A0// analog input pin for the battery voltage divider  //PIN A0  é‡‡é›†ç”µæ± ç”µåŽ‹
+
+
+#define c_VInToVBatteryRatio 2.921/////////////////////////A6ä¸Šæµ‹çš„ç”µåŽ‹ä¸ŽçœŸå®žç”µæºç”µåŽ‹çš„æ¯”å€¼
 
 BatteryMonitor _BatteryMonitor(c_ScaledBatteryVInPin, c_VInToVBatteryRatio);
 
@@ -104,7 +104,7 @@ BatteryMonitor _BatteryMonitor(c_ScaledBatteryVInPin, c_VInToVBatteryRatio);
 Messenger _Messenger = Messenger();
 
 
-/////////////////////////////////////###################################ÉèÖÃ±àÂëÆ÷
+/////////////////////////////////////###################################è®¾ç½®ç¼–ç å™¨
 void SetupEncoders()
 {
   // Quadrature encoders
@@ -125,110 +125,110 @@ void SetupEncoders()
 
 
 
-bool _IsInitialized = false;                  ///############³õÊ¼»¯¹é0
+bool _IsInitialized = false;                  ///############åˆå§‹åŒ–å½’0
 
 void setup()
 {
 
-  Serial.begin(115200);                       //½¨Á¢´®¿ÚÍ¨ÐÅ
+  Serial.begin(115200);                       //å»ºç«‹ä¸²å£é€šä¿¡
 
-  SetupEncoders();                            //½¨Á¢±àÂëÆ÷¼ÆÊý
+  SetupEncoders();                            //å»ºç«‹ç¼–ç å™¨è®¡æ•°
 
-  _Messenger.attach(OnMssageCompleted);       //½¨Á¢ÐÅÏ¢¶ÁÈ¡  »úÖÆ
+  _Messenger.attach(OnMssageCompleted);       //å»ºç«‹ä¿¡æ¯è¯»å–  æœºåˆ¶
   ///############
-  // S´ú±í  ÏßËÙ¶ÈÓë×ªÏòËÙ¶È¿ØÖÆÃüÁî
+  // Sä»£è¡¨  çº¿é€Ÿåº¦ä¸Žè½¬å‘é€Ÿåº¦æŽ§åˆ¶å‘½ä»¤
 
-  ///############²ÎÊý³õÊ¼»¯ÃüÁî
+  ///############å‚æ•°åˆå§‹åŒ–å‘½ä»¤
 
   ///DriveGeometry
   ///SpeedControllerParams
   ///BatteryMonitorParams
 
-  //_RightServo.attach(10);                     // attaches the servo on specified pin to the servo object   Servo Ö¸¶¨Òý½ÅPWMÊä³ö 
-  //_LeftServo.attach(11);                      // attaches the servo on specified pin to the servo object   Servo Ö¸¶¨Òý½ÅPWMÊä³ö 
+  //_RightServo.attach(10);                     // attaches the servo on specified pin to the servo object   Servo æŒ‡å®šå¼•è„šPWMè¾“å‡º 
+  //_LeftServo.attach(11);                      // attaches the servo on specified pin to the servo object   Servo æŒ‡å®šå¼•è„šPWMè¾“å‡º 
 
   /*
-/////////////////////##########################ÏÈÈÃÂÖ×Ó×ª¶¯90¡ã
-   _RightServo.write(90);                      //¼´×ª¶¯µ½90¶È¡£
+/////////////////////##########################å…ˆè®©è½®å­è½¬åŠ¨90Â°
+   _RightServo.write(90);                      //å³è½¬åŠ¨åˆ°90åº¦ã€‚
    _LeftServo.write(90);
    */
-  delay(100);                                 ////////ÑÓÊ±100ms         
-  _TimeInfo.Update();                       //ÏµÍ³³õ´Î¸üÐÂÊ±¼ä
+  delay(100);                                 ////////å»¶æ—¶100ms         
+  _TimeInfo.Update();                       //ç³»ç»Ÿåˆæ¬¡æ›´æ–°æ—¶é—´
 }
 
 void loop()
 {
 
-  ReadSerial();                                       ////´¦ÀíÁËÏÂ´®¿ÚÐÅÏ¢
+  ReadSerial();                                       ////å¤„ç†äº†ä¸‹ä¸²å£ä¿¡æ¯
 
-  unsigned long milliSecsSinceLastUpdate = millis() - _TimeInfo.LastUpdateMillisecs;////´Ë¿ÌÊ±¼ä¼õÈ¥ÏµÍ³ÉÏ´ÎÊ±¼ä¸üÐÂ£¨ºÁÃë¼¶£©
-  if(milliSecsSinceLastUpdate >= c_UpdateInterval)    /////ÅÐ¶ÏÊ±¼äÊÇ·ñ´ïµ½¸üÐÂãÐÖµ
+  unsigned long milliSecsSinceLastUpdate = millis() - _TimeInfo.LastUpdateMillisecs;////æ­¤åˆ»æ—¶é—´å‡åŽ»ç³»ç»Ÿä¸Šæ¬¡æ—¶é—´æ›´æ–°ï¼ˆæ¯«ç§’çº§ï¼‰
+  if(milliSecsSinceLastUpdate >= c_UpdateInterval)    /////åˆ¤æ–­æ—¶é—´æ˜¯å¦è¾¾åˆ°æ›´æ–°é˜ˆå€¼
   {
     //Serial.println(milliSecsSinceLastUpdate);     
 
     // time for another update
-    _TimeInfo.Update();                              ///////ÔÙ´Î¸üÐÂÊ±¼ä  
+    _TimeInfo.Update();                              ///////å†æ¬¡æ›´æ–°æ—¶é—´  
 
-    if (_IsInitialized)                              ///////ÅÐ¶ÏÏµÍ³ÊÇ·ñ³õÊ¼»¯ ³õÊ¼»¯¹¤×÷£¬·ñÔòÏòPCÇëÇó³õÊ¼»¯
-    {                                                ///////µÚÒ»´ÎÏµÍ³Î´³õÊ¼»¯
-      DoWork();                                      ///////¸üÐÂ ÊµÊ±Êý¾Ý £¬Ö´ÐÐÔË¶¯ÃüÁî£¬ÔÙ´Î·µ»ØÊµÊ±Êý¾Ý 
+    if (_IsInitialized)                              ///////åˆ¤æ–­ç³»ç»Ÿæ˜¯å¦åˆå§‹åŒ– åˆå§‹åŒ–å·¥ä½œï¼Œå¦åˆ™å‘PCè¯·æ±‚åˆå§‹åŒ–
+    {                                                ///////ç¬¬ä¸€æ¬¡ç³»ç»Ÿæœªåˆå§‹åŒ–
+      DoWork();                                      ///////æ›´æ–° å®žæ—¶æ•°æ® ï¼Œæ‰§è¡Œè¿åŠ¨å‘½ä»¤ï¼Œå†æ¬¡è¿”å›žå®žæ—¶æ•°æ® 
     }
     else
     {
-      RequestInitialization();                       //////ÈôÏµÍ³Î´³õÊ¼»¯³É¹¦£¬ÔÙ´ÎÇëÇó
+      RequestInitialization();                       //////è‹¥ç³»ç»Ÿæœªåˆå§‹åŒ–æˆåŠŸï¼Œå†æ¬¡è¯·æ±‚
     }
   }
 }
-///////////////////////////////////###################ÖÐÐÄÈÎÎñ############################//////////////////////////////////////////////
+///////////////////////////////////###################ä¸­å¿ƒä»»åŠ¡############################//////////////////////////////////////////////
 
 
 
 
-/////////////###########################1111¸üÐÂ·½Î»£¬µç³ØµçÁ¿£¬ËÙ¶ÈÊý¾Ý
+/////////////###########################1111æ›´æ–°æ–¹ä½ï¼Œç”µæ± ç”µé‡ï¼Œé€Ÿåº¦æ•°æ®
 
-/////////////###########################2222µÃµ½ÃüÁî  ¿ØÖÆÐ¡³µÔË¶¯£¨¼´¿ØÖÆÐÅºÅ£©
+/////////////###########################2222å¾—åˆ°å‘½ä»¤  æŽ§åˆ¶å°è½¦è¿åŠ¨ï¼ˆå³æŽ§åˆ¶ä¿¡å·ï¼‰
 
-/////////////###########################3333´«»ØÊý¾Ý£ºµç³ØµçÁ¿£¬µ±Ç°Î»ÖÃ£¨x£¬y£©£¨È«¾Ö×ø±ê£©£¬·½ÏòHeading£¨½Ç¶È£©£¬Ç°½øËÙ¶ÈForword V£¬×ª¶È½Ç¶ÈOmega
+/////////////###########################3333ä¼ å›žæ•°æ®ï¼šç”µæ± ç”µé‡ï¼Œå½“å‰ä½ç½®ï¼ˆxï¼Œyï¼‰ï¼ˆå…¨å±€åæ ‡ï¼‰ï¼Œæ–¹å‘Headingï¼ˆè§’åº¦ï¼‰ï¼Œå‰è¿›é€Ÿåº¦Forword Vï¼Œè½¬åº¦è§’åº¦Omega
 
 void DoWork()                       
 {
-  ///////////////####################¸üÐÂÊý¾Ý
-  _OdometricLocalizer.Update(_LeftEncoderTicks, _RightEncoderTicks);////TicksÓÉÁ½¸öÍâ²¿ÖÐ¶Ïµ¥¶À²»»ñ¶ÏÈ¡
+  ///////////////####################æ›´æ–°æ•°æ®
+  _OdometricLocalizer.Update(_LeftEncoderTicks, _RightEncoderTicks);////Ticksç”±ä¸¤ä¸ªå¤–éƒ¨ä¸­æ–­å•ç‹¬ä¸èŽ·æ–­å–
 
   _BatteryMonitor.Update();
 
   _SpeedController.Update(false);
 
-  //_SpeedController.Update(_BatteryMonitor.VoltageIsTooLow);     ////ËÙ¶È¸üÐÂ
-  ////µç³ØµçÁ¿¹»Ôò¸üÐÂËÙ¶Èµ÷½Ú£¬·ñÔòstop
+  //_SpeedController.Update(_BatteryMonitor.VoltageIsTooLow);     ////é€Ÿåº¦æ›´æ–°
+  ////ç”µæ± ç”µé‡å¤Ÿåˆ™æ›´æ–°é€Ÿåº¦è°ƒèŠ‚ï¼Œå¦åˆ™stop
 
 
 
-  ///////////////####################Ö´ÐÐ¿ØÖÆÃüÁî
+  ///////////////####################æ‰§è¡ŒæŽ§åˆ¶å‘½ä»¤
   IssueCommands();
 
 
 
-  ///////////////####################¿ªÊ¼·µ»ØÊý¾Ý   
-  Serial.print("o"); // o indicates odometry message    ####    Í¨ÐÅÐ­Òé£ºo´ú±íÀï³Ì¼ÆµÃÀ´Êý¾Ý
+  ///////////////####################å¼€å§‹è¿”å›žæ•°æ®   
+  Serial.print("o"); // o indicates odometry message    ####    é€šä¿¡åè®®ï¼šoä»£è¡¨é‡Œç¨‹è®¡å¾—æ¥æ•°æ®
 
-  Serial.print("\t");                                           //// Êý¾ÝÖ®¼ä¿Õ¸ñ
+  Serial.print("\t");                                           //// æ•°æ®ä¹‹é—´ç©ºæ ¼
 
-  ////Ð¡Êýµãºó±£Áô3Î»ÓÐÐ§Êý×Ö
-  Serial.print(_OdometricLocalizer.X, 3);                       ////£¨x£¬y£©×ø±ê 
+  ////å°æ•°ç‚¹åŽä¿ç•™3ä½æœ‰æ•ˆæ•°å­—
+  Serial.print(_OdometricLocalizer.X, 3);                       ////ï¼ˆxï¼Œyï¼‰åæ ‡ 
   Serial.print("\t");
   Serial.print(_OdometricLocalizer.Y, 3);
   Serial.print("\t");
-  Serial.print(_OdometricLocalizer.Heading, 3);                 ////·½Ïò
+  Serial.print(_OdometricLocalizer.Heading, 3);                 ////æ–¹å‘
   Serial.print("\t");
-  Serial.print(_OdometricLocalizer.V, 3);                       ////Æ½ÒÆËÙ¶È 
+  Serial.print(_OdometricLocalizer.V, 3);                       ////å¹³ç§»é€Ÿåº¦ 
   Serial.print("\t");
-  Serial.print(_OdometricLocalizer.Omega, 3);                   ////×ªÏò½ÇËÙ¶È
+  Serial.print(_OdometricLocalizer.Omega, 3);                   ////è½¬å‘è§’é€Ÿåº¦
 
   Serial.print("\n");
 
-  Serial.print("b\t"); // b indicates battery info message ## Í¨ÐÅÐ­Òé£ºb ´ú±íµç³ØµçÁ¿Êý¾Ý
-  Serial.print(_BatteryMonitor.BatteryVoltage, 3);            ////Ð¡Êýµãºó±£Áô3Î»ÓÐÐ§Êý×Ö
+  Serial.print("b\t"); // b indicates battery info message ## é€šä¿¡åè®®ï¼šb ä»£è¡¨ç”µæ± ç”µé‡æ•°æ®
+  Serial.print(_BatteryMonitor.BatteryVoltage, 3);            ////å°æ•°ç‚¹åŽä¿ç•™3ä½æœ‰æ•ˆæ•°å­—
   //Serial.print("\t");
   //Serial.print(_BatteryMonitor.VoltageIsTooLow);
   Serial.print("\n");
@@ -241,11 +241,11 @@ void DoWork()
 }
 
 
-//////////////////////////////#######################ÇëÇó³õÊ¼»¯ÏµÍ³
-//////////////////////////////Àï³Ì²ÎÊý³õÊ¼»¯
-//////////////////////////////ËÙ¶È²ÎÊý³õÊ¼»¯
-//////////////////////////////µç³Ø²ÎÊý³õÊ¼»¯
-//////////////////////////////PC¶Ë¸ù¾Ýprint¹ýÀ´µÄ×Ö·ûÍê³ÉÏàÓ¦³õÊ¼»¯
+//////////////////////////////#######################è¯·æ±‚åˆå§‹åŒ–ç³»ç»Ÿ
+//////////////////////////////é‡Œç¨‹å‚æ•°åˆå§‹åŒ–
+//////////////////////////////é€Ÿåº¦å‚æ•°åˆå§‹åŒ–
+//////////////////////////////ç”µæ± å‚æ•°åˆå§‹åŒ–
+//////////////////////////////PCç«¯æ ¹æ®printè¿‡æ¥çš„å­—ç¬¦å®Œæˆç›¸åº”åˆå§‹åŒ–
 
 
 void RequestInitialization()
@@ -277,13 +277,13 @@ void RequestInitialization()
   }
 }
 
-///////////////////////////////#############################Ö´ÐÐÃüÁî    ¿ØÖÆÁ½¸öµç»ú×ª¶¯
-///////////////////////////////#############################½«PI´¦ÀíµÃµ½µÄµç»úÔË¶¯²ÎÊýÖ´ÐÐ
+///////////////////////////////#############################æ‰§è¡Œå‘½ä»¤    æŽ§åˆ¶ä¸¤ä¸ªç”µæœºè½¬åŠ¨
+///////////////////////////////#############################å°†PIå¤„ç†å¾—åˆ°çš„ç”µæœºè¿åŠ¨å‚æ•°æ‰§è¡Œ
 void IssueCommands()                 
 {
   float normalizedRightMotorCV, normalizedLeftMotorCV;
 
-  normalizedRightMotorCV = _SpeedController.NormalizedLeftCV;          ///PIµ÷½ÚºóµÃµ½ÆÚÍû¿ØÖÆÊý¾Ý--×ªËÙ
+  normalizedRightMotorCV = _SpeedController.NormalizedLeftCV;          ///PIè°ƒèŠ‚åŽå¾—åˆ°æœŸæœ›æŽ§åˆ¶æ•°æ®--è½¬é€Ÿ
   normalizedLeftMotorCV  = _SpeedController.NormalizedRightCV;
 
 
@@ -313,7 +313,7 @@ void IssueCommands()
    Serial.print("\n");
    */
 
-  /////////#####################Ó³Éä        ¿ØÖÆÊý¾ÝÓ³Éäµ½µç»ú×ª¶¯Ö¸ÁîÖµ    60¡ãµ½120¡ã
+  /////////#####################æ˜ å°„        æŽ§åˆ¶æ•°æ®æ˜ å°„åˆ°ç”µæœºè½¬åŠ¨æŒ‡ä»¤å€¼    60Â°åˆ°120Â°
   float leftMotorValue = mapFloat(normalizedLeftMotorCV, -1.0, 1.0, -200.0, 200.0); 
   float rightMotorValue = mapFloat(normalizedRightMotorCV, -1.0, 1.0, -160.0, 160.0); 
   if(leftMotorValue>250||leftMotorValue<-250)
@@ -357,12 +357,12 @@ void IssueCommands()
   RMotor.work(rightMotorValue);
 
 
-  // _RightServo.write(rightServoValue);     // sets the servo position according to the scaled value (0 ... 179)    Ö´ÐÐ¿ØÖÆ  µç»ú×ª¶¯
+  // _RightServo.write(rightServoValue);     // sets the servo position according to the scaled value (0 ... 179)    æ‰§è¡ŒæŽ§åˆ¶  ç”µæœºè½¬åŠ¨
   // _LeftServo.write(leftServoValue);       // sets the servo position according to the scaled value (0 ... 179)
 }
 
 
-// Interrupt service routines for the left motor's quadrature encoder      ####PinAÉÏÉýÑØ£¬½øÈëÖÐ¶Ï£¬¶Á±àÂëÆ÷Êý×ÖÊä³ö¿Ú PinB
+// Interrupt service routines for the left motor's quadrature encoder      ####PinAä¸Šå‡æ²¿ï¼Œè¿›å…¥ä¸­æ–­ï¼Œè¯»ç¼–ç å™¨æ•°å­—è¾“å‡ºå£ PinB
 void HandleLeftMotorInterruptA()
 {
   // Test transition; since the interrupt will only fire on 'rising' we don't need to read pin A
@@ -377,7 +377,7 @@ void HandleLeftMotorInterruptA()
 }
 
 
-// Interrupt service routines for the right motor's quadrature encoder    ####PinAÉÏÉýÑØ£¬½øÈëÖÐ¶Ï£¬¶Á±àÂëÆ÷Êý×ÖÊä³ö¿Ú PinB
+// Interrupt service routines for the right motor's quadrature encoder    ####PinAä¸Šå‡æ²¿ï¼Œè¿›å…¥ä¸­æ–­ï¼Œè¯»ç¼–ç å™¨æ•°å­—è¾“å‡ºå£ PinB
 void HandleRightMotorInterruptA()
 {
   // Test transition; since the interrupt will only fire on 'rising' we don't need to read pin A
@@ -392,7 +392,7 @@ void HandleRightMotorInterruptA()
 }
 
 
-////////////////////////####################¶Á´®¿Ú»ñÈ¡ÔË¶¯Ö¸Áî  
+////////////////////////####################è¯»ä¸²å£èŽ·å–è¿åŠ¨æŒ‡ä»¤  
 void ReadSerial()
 {
   while (Serial.available())
@@ -402,9 +402,9 @@ void ReadSerial()
 }
 
 
-// Define messenger function     #############       ¶¨ÒåÍ¨ÐÅº¯Êý      ¶ÁÈ¡³õÊ¼»¯ÃüÁî ³õÊ¼»¯¸öÊý¾Ý 
-void OnMssageCompleted()       /////////////////#####¼ì²â ´¦ÀíPC¶Ë¹ýÀ´µÄÐÅÏ¢
-{                                            ///////////////ÏÈ¼ì²é¹Ø¼ü×Ö
+// Define messenger function     #############       å®šä¹‰é€šä¿¡å‡½æ•°      è¯»å–åˆå§‹åŒ–å‘½ä»¤ åˆå§‹åŒ–ä¸ªæ•°æ® 
+void OnMssageCompleted()       /////////////////#####æ£€æµ‹ å¤„ç†PCç«¯è¿‡æ¥çš„ä¿¡æ¯
+{                                            ///////////////å…ˆæ£€æŸ¥å…³é”®å­—
   if (_Messenger.checkString("s"))
   {
     SetSpeed();
@@ -444,17 +444,17 @@ void ClearOutMessenger()
 }
 
 
-////////////////###################ËÙ¶ÈÉè¶¨    ´óÐ¡£¬·½Ïò£¬×ªÏòËÙ¶È
+////////////////###################é€Ÿåº¦è®¾å®š    å¤§å°ï¼Œæ–¹å‘ï¼Œè½¬å‘é€Ÿåº¦
 void SetSpeed()
 {
-  float commandedVelocity         = GetFloatFromBaseAndExponent(_Messenger.readInt(), _Messenger.readInt());  ////´ÓPC¶Ë »ñÈ¡ËÙ¶ÈÃüÁî²ÎÊý Æ½ÒÆËÙ¶È£¬×ªÏò½ÇËÙ¶È
+  float commandedVelocity         = GetFloatFromBaseAndExponent(_Messenger.readInt(), _Messenger.readInt());  ////ä»ŽPCç«¯ èŽ·å–é€Ÿåº¦å‘½ä»¤å‚æ•° å¹³ç§»é€Ÿåº¦ï¼Œè½¬å‘è§’é€Ÿåº¦
   float commandedAngularVelocity  = GetFloatFromBaseAndExponent(_Messenger.readInt(), _Messenger.readInt());
 
   ///_OdometricLocalizer.CommandVelocity(commandedVelocity, commandedAngularVelocity);
-  //////////////////////////PIDµ÷½Ú¿ØÖÆÊý¾Ý
+  //////////////////////////PIDè°ƒèŠ‚æŽ§åˆ¶æ•°æ®
   _SpeedController.CommandVelocity(commandedVelocity, commandedAngularVelocity); 
 }
-//////////////######################  ´ÓPC¶Ë»ñÈ¡ÃüÁî²ÎÊý£º³µÂÖÖ±¾¶0.0762m   ÂÖ¾à0.37m  Ã¿È¦µÄ¼ÆÊý   19.5*500*2=19500 
+//////////////######################  ä»ŽPCç«¯èŽ·å–å‘½ä»¤å‚æ•°ï¼šè½¦è½®ç›´å¾„0.0762m   è½®è·0.37m  æ¯åœˆçš„è®¡æ•°   19.5*500*2=19500 
 /////////////set robot params wheel diameter [m], trackwidth [m], ticks per revolution
 void InitializeDriveGeometry()
 {
@@ -462,13 +462,13 @@ void InitializeDriveGeometry()
   float trackWidth          = GetFloatFromBaseAndExponent(_Messenger.readInt(), _Messenger.readInt());
   int   countsPerRevolution = _Messenger.readInt();
 
-  _RobotParams.Initialize(wheelDiameter, trackWidth, countsPerRevolution);     //³õÊ¼»¯
+  _RobotParams.Initialize(wheelDiameter, trackWidth, countsPerRevolution);     //åˆå§‹åŒ–
   
 
    
 }
 
-////#######################################³õÊ¼»¯ËÙ¶È¿ØÖÆÏµÍ³²ÎÊý        ´ÓPC¶ËÍ¨¹ý´®¿Ú£¬ÓÃMessenger¶ÁÈ¡£¬¼ÆËãµÃµ½PIDµ÷ÊÔÐèÒªµÄ²ÎÊý
+////#######################################åˆå§‹åŒ–é€Ÿåº¦æŽ§åˆ¶ç³»ç»Ÿå‚æ•°        ä»ŽPCç«¯é€šè¿‡ä¸²å£ï¼Œç”¨Messengerè¯»å–ï¼Œè®¡ç®—å¾—åˆ°PIDè°ƒè¯•éœ€è¦çš„å‚æ•°
 void InitializeSpeedControllerParams()
 {
   float velocityPParam = GetFloatFromBaseAndExponent(_Messenger.readInt(), _Messenger.readInt());
@@ -477,12 +477,12 @@ void InitializeSpeedControllerParams()
   float turnIParam     = GetFloatFromBaseAndExponent(_Messenger.readInt(), _Messenger.readInt());
   float commandTimeout = GetFloatFromBaseAndExponent(_Messenger.readInt(), _Messenger.readInt());
 
-  _SpeedController.Initialize(velocityPParam, velocityIParam, turnPParam, turnIParam, commandTimeout);////  ÀûÓÃ²ÎÊý  ³õÊ¼»¯ËÙ¶È¿ØÖÆÏµÍ³
+  _SpeedController.Initialize(velocityPParam, velocityIParam, turnPParam, turnIParam, commandTimeout);////  åˆ©ç”¨å‚æ•°  åˆå§‹åŒ–é€Ÿåº¦æŽ§åˆ¶ç³»ç»Ÿ
 
 
 }
 
-////#######################################³õÊ¼»¯µç³Ø¼àÊÓ   µÃµ½ÏÞÖÆµç³ØµçÑ¹
+////#######################################åˆå§‹åŒ–ç”µæ± ç›‘è§†   å¾—åˆ°é™åˆ¶ç”µæ± ç”µåŽ‹
 void InitializeBatteryMonitor()
 {
   float voltageTooLowlimit = GetFloatFromBaseAndExponent(_Messenger.readInt(), _Messenger.readInt());
@@ -498,13 +498,13 @@ void InitializeBatteryMonitor()
 //////#############################
 float GetFloatFromBaseAndExponent(int base, int exponent)
 {
-  return base * pow(10, exponent);         /////////////#############¼ÆÊý¹«Ê½µÃµ½10Îªµ×£¬exponentÎªÃÝ£¬ÔÙ³ËbaseµÄfloat
+  return base * pow(10, exponent);         /////////////#############è®¡æ•°å…¬å¼å¾—åˆ°10ä¸ºåº•ï¼Œexponentä¸ºå¹‚ï¼Œå†ä¹˜baseçš„float
 }
-/////////////////////////##################Ó³Éäº¯Êý
+/////////////////////////##################æ˜ å°„å‡½æ•°
 
 long mapFloat(float x, float in_min, float in_max, float out_min, float out_max)
 {
-  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min; /////////////#############¼ÆÊý¹«Ê½
+  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min; /////////////#############è®¡æ•°å…¬å¼
 }
 
 
